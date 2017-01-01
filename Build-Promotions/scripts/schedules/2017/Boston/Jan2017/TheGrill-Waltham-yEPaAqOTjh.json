@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "yEPaAqOTjh",
+	"restaurantName"	: "The Grill",
+	"startDate"		: "01/01/2017",
+	"endDate"		: "01/31/2017",
+	"skipDates"		: [ ],
+	"schedules"		: [
+		{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "12:00pm",
+			"endTime"   : "1:30pm",
+			"discount"  : 30,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 1,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "4:30pm",
+			"endTime"   : "8:30pm",
+		    "discount"  : 30,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

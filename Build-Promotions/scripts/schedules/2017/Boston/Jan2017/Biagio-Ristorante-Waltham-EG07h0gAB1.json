@@ -1,0 +1,61 @@
+{
+	"restaurantID" 		: "EG07h0gAB1",
+	"restaurantName"	: "Biagio Ristorante"  ,
+	"startDate"			: "1/1/2017",
+	"endDate"			: "1/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Mon-Friday dinner",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : " 4:00pm",
+			"endTime"	: " 9:30pm",
+			"discount"	: 25,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 2,
+			"tableFor4" : 3,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "Sat lunch",
+			"dayOfWeek" : ["Sat"],
+			"startTime" : " 4:00pm",
+			"endTime"	: " 5:30pm",
+			"discount"	: 25,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 2,
+			"tableFor4" : 3,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "Sat dinner",
+			"dayOfWeek" : ["Sat"],
+			"startTime" : " 8:30pm",
+			"endTime"	: "10:00pm",
+			"discount"	: 25,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 2,
+			"tableFor4" : 3,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "Sun all day",
+			"dayOfWeek" : ["Sun"],
+			"startTime" : " 1:00pm",
+			"endTime"	: " 9:30pm",
+			"discount"	: 25,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 4,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

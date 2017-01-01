@@ -38,13 +38,24 @@ moment.tz.setDefault("America/New_York");
 
 const DAYS_OF_WEEK = [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-// When connecting to Parse server
-Parse.initialize("2wlLD2heOTJngATM5tu7w8EVmWdTA7TYTE1Ek6eE");
-Parse.serverURL = 'https://cf6b06b5.ngrok.io/pserver';
+// When connecting to Parse server - this are the crenetail for the Android test DB App
+//Parse.initialize("2wlLD2heOTJngATM5tu7w8EVmWdTA7TYTE1Ek6eE");
+//Parse.serverURL = 'https://cf6b06b5.ngrok.io/pserver';
+
+// Live Parse Server credentails
+Parse.initialize("l7F9xkTQrSxhf0RuXVlZ7MpC1rM96aeQrN8D3lGd");
+Parse.serverURL = 'https://www.mmparse.com/pserver';
+
+
+if (process.env.RESTAURANT_PROMOTION_DIR === undefined) {
+	logError("RESTAURANT_PROMOTION_DIR is not defined");
+	return;
+}
+
+log("process.argv[2]) = " + process.argv[2]);
 
 // Read promotions from disk and schedule one if needed
 scheduleFuturePromotions(process.env.ACTIVE_RUN === undefined);
-
 
 
 // Read the promotions from disk and schedule one if this is not a validation run
@@ -84,6 +95,13 @@ function scheduleFuturePromotions(validationRunOnly) {
 							let validationResult;
 							let startTime;
 							let endTime;
+
+							if (process.argv[2] !== undefined &&
+								process.argv[2] !== (next.fileName + ".json")) {
+								log("**** Skipping file %s due to argv[2] %s", next.fileName, process.argv[2]);
+								return Promise.resolve("Skipping file " + next.fileName + " due to argv[2] " + process.argv[2]);
+							} 	
+
 
 							log("***fileName = %s  , object = %s", next.fileName,util.inspect(next.object, {showHidden: false, depth: null}));
 							validationResult = validatePromotionSchedule( next.fileName,  next.object);
@@ -187,6 +205,7 @@ function scheduleFuturePromotions(validationRunOnly) {
 											
 											    promotion.set(AppConstants.KParsePromotiontMaxDiscountKey,    promotionScheduleObject.discount);
 											    promotion.set(AppConstants.KParsePromotionAlcoholIncludedKey, promotionScheduleObject.alcohol);
+											    promotion.set(AppConstants.KParsePromotionMaxHoldTimeKey,     promotionScheduleObject.duration);
 											    promotion.set(AppConstants.KParsePromotionLocationKey,        restaurantObj.get(AppConstants.KParseRestaurantLocationKey));
 											    
 											    promotion.set(AppConstants.KParsePromotionCanceledKey       , false);
@@ -418,8 +437,8 @@ function validatePromotionSchedule(fileName, object) {
 			return null;
 		}
 
-		if (schedule.duration < 0 || schedule.duration > 120 ) {
-			logError("Validation error - schedule's discount is out of range 0-120 minutes, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+		if (schedule.duration < 1800 || schedule.duration > 7200 ) {
+			logError("Validation error - schedule's discount is out of range 1800-7200 seconds, object = %s", util.inspect(object, {showHidden: false, depth: null}));
 			return null;
 		}
 

@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "",
+	"restaurantName"	: "Red Bird",
+	"startDate"		: "01/01/2017",
+	"endDate"		: "01/31/2017",
+	"skipDates"		: [ ],
+	"schedules"		: [
+		{
+			"name"	    : "Dinner1",
+			"dayOfWeek" : ["Sun", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "5:00pm",
+			"endTime"   : "6:00pm",
+			"discount"  : 20,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 1,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Dinner2",
+			"dayOfWeek" : ["Sun", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "8:00pm",
+			"endTime"   : "9:00pm",
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

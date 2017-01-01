@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "HLjJh4qP9Z",
+	"restaurantName"	: "Darryl's Corner Kitchen"  ,
+	"startDate"			: "1/1/2017",
+	"endDate"			: "1/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Tue-Thu",
+			"dayOfWeek" : ["Tue", "Wed", "Thu"],
+			"startTime" : " 5:00pm",
+			"endTime"	: " 7:00pm",
+			"discount"	: 15,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "Lunch",
+			"dayOfWeek" : ["Fri", "Sat"],
+			"startTime" : " 5:00pm",
+			"endTime"	: " 7:00pm",
+			"discount"	: 15,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 4,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

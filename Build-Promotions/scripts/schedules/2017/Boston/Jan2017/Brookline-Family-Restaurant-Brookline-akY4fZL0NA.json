@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "akY4fZL0NA",
+	"restaurantName"	: "Brookline Family Restaurant"  ,
+	"startDate"			: "1/1/2017",
+	"endDate"			: "1/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Mon-Thu All-Day",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu"],
+			"startTime" : " 3:00pm",
+			"endTime"	: " 9:00pmm",
+			"discount"	: 15,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 3,
+			"tableFor4" : 3,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

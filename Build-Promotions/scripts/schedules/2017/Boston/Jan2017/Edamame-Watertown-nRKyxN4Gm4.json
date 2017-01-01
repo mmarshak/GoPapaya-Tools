@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "nRKyxN4Gm4",
+	"restaurantName"	: "Edamame",
+	"startDate"		: "01/01/2017",
+	"endDate"		: "01/31/2017",
+	"skipDates"		: [ ],
+	"schedules"		: [
+		{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "11:40am",
+			"endTime"   : "2:40pm",
+			"discount"  : 15,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "4:15pm",
+			"endTime"   : "8:45pm",
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

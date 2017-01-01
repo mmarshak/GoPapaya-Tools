@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "IQ3NCoIcEE",
+	"restaurantName"	: "Shun's Kitchen"  ,
+	"startDate"			: "1/1/2017",
+	"endDate"			: "1/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Mon-Sat All Day",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "11:30am",
+			"endTime"	: " 9:00pm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 3,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "Sun All Day",
+			"dayOfWeek" : ["Sun"],
+			"startTime" : "12:00pm",
+			"endTime"	: " 8:00pmm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 3,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

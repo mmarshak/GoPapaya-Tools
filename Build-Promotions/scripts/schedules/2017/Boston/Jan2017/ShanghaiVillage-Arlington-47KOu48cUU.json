@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "47KOu48cUU",
+	"restaurantName"	: "Shanghai Village",
+	"startDate"		: "01/01/2017",
+	"endDate"		: "01/31/2017",
+	"skipDates"		: [ ],
+	"schedules"		: [
+		{
+			"name"	    : "LunchDinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "12:30pm",
+			"endTime"   : "8:30pm",
+			"discount"  : 20,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 2,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

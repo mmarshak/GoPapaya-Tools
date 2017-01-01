@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "4I7wEPswCl",
+	"restaurantName"	: "Sher-A-Punjab"  ,
+	"startDate"			: "1/1/2017",
+	"endDate"			: "1/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "12:00pm",
+			"endTime"	: " 5:00pm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "Lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : " 5:00pm",
+			"endTime"	: " 9:00pm",
+			"discount"	: 30,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "zH4APacHtM",
+	"restaurantName"	: "Santa Banta",
+	"startDate"		: "01/01/2017",
+	"endDate"		: "01/31/2017",
+	"skipDates"		: [ ],
+	"schedules"		: [
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "6:00pm",
+			"endTime"   : "9:30pm",
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 3,
+			"tableFor4" : 3,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

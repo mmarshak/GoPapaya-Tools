@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "3i5gsK52jC",
+	"restaurantName"	: "Little Thai Cafe",
+	"startDate"		: "01/01/2017",
+	"endDate"		: "01/31/2017",
+	"skipDates"		: [ ],
+	"schedules"		: [
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "4:00pm",
+			"endTime"   : "9:00pm",
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

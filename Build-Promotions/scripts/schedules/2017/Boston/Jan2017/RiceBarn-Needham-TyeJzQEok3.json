@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "TyeJzQEok3",
+	"restaurantName"	: "The Rice Barn",
+	"startDate"		: "01/01/2017",
+	"endDate"		: "01/31/2017",
+	"skipDates"		: [ "1/1/2017"],
+	"schedules"		: [
+		{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "11:30am",
+			"endTime"   : "2:00pm",
+			"discount"  : 20,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 10,
+			"tableFor4" : 10,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "5:00pm",
+			"endTime"   : "8:30pm",
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 10,
+			"tableFor4" : 10,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}
