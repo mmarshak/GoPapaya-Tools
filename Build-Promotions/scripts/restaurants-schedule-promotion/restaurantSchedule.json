@@ -1,0 +1,49 @@
+{
+	"restaurantID" 		: "VfU1ZwYltx",
+	"restaurantName"	: "New Wave"  ,
+	"startDate"			: "1/1/2017",
+	"endDate"			: "01/5/2017",
+	"skipDates"			: [ "01/5/2017", "1/22/2017", "2/7/2017" ],
+	"schedules"			: [
+		{
+			"name"		: "Lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "3:05am",
+			"endTime"	: "11:05am",
+			"discount"	: 30,
+			"duration"  : 30,
+			"alcohol"	: 1,
+			"tableFor2" : 2,
+			"tableFor4" : 4,
+			"tableFor5" : 5,
+			"tableFor6" : 6
+		},
+		{
+			"name"		: "Lunch-Duplicate",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "11:05am",
+			"endTime"	: "12:10pm",
+			"discount"	: 10,
+			"duration"  : 30,
+			"alcohol"	: 1,
+			"tableFor2" : 1,
+			"tableFor4" : 2,
+			"tableFor5" : 3,
+			"tableFor6" : 4
+		},
+		{
+			"name"		: "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Fri", "Sat"],
+			"startTime" : "4:05pm",
+			"endTime"	: "9:20pm",
+			"discount"	: 25,
+			"duration"  : 30,
+			"alcohol"	: 1,
+			"tableFor2" : 22,
+			"tableFor4" : 44,
+			"tableFor5" : 55,
+			"tableFor6" : 66
+		}
+
+	]
+}
