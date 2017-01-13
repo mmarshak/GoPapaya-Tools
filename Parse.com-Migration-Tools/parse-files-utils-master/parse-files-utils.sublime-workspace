@@ -1,0 +1,498 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"const\t? "
+			],
+			[
+				"ne",
+				"next\t? "
+			],
+			[
+				"htt",
+				"httpres\t{} "
+			],
+			[
+				"c",
+				"chunk\t? "
+			],
+			[
+				"hr",
+				"httpres\t{} "
+			],
+			[
+				"fi",
+				"fibonum"
+			],
+			[
+				"re",
+				"require(id)\tfn "
+			],
+			[
+				"pa",
+				"path\tstr "
+			],
+			[
+				"s",
+				"server\t{} "
+			],
+			[
+				"key",
+				"keys\t[] "
+			],
+			[
+				"u",
+				"url\tstr "
+			],
+			[
+				"exp",
+				"exports\t{} "
+			],
+			[
+				"de",
+				"debug\t{} "
+			],
+			[
+				"P",
+				"Pulser()\tfn "
+			],
+			[
+				"i",
+				"i\tnum "
+			],
+			[
+				"ar",
+				"argv\t[] "
+			],
+			[
+				"pro",
+				"process\t{} "
+			],
+			[
+				"pr",
+				"process\t{} "
+			],
+			[
+				"r",
+				"reject(reason)\tfn "
+			],
+			[
+				"res",
+				"result\tnum "
+			],
+			[
+				"e",
+				"error\t? "
+			],
+			[
+				"n",
+				"number\tnum "
+			],
+			[
+				"create",
+				"createWriteStream(path, options?) -> stream.Writable\tfn "
+			],
+			[
+				"respon",
+				"response"
+			],
+			[
+				"t",
+				"toString"
+			],
+			[
+				"st",
+				"stats\t{} "
+			],
+			[
+				"dec",
+				"decodeURIComponent(uri) -> string\tfn "
+			],
+			[
+				"respo",
+				"respond(code, body, type)\tfn "
+			],
+			[
+				"w",
+				"writeHead(statusCode, headers?)\tfn "
+			],
+			[
+				"te",
+				"textJson\t{} "
+			],
+			[
+				"ca",
+				"catch\t? "
+			],
+			[
+				"g",
+				"garble\t? "
+			],
+			[
+				"f",
+				"fail(reason)\tfn "
+			],
+			[
+				"get",
+				"getURL(url, callback)\tfn "
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"F",
+				"Function(body) -> fn()\tfn "
+			],
+			[
+				"func",
+				"function\t? "
+			],
+			[
+				"ex",
+				"exports\t? "
+			],
+			[
+				"fun",
+				"function\t? "
+			],
+			[
+				"d",
+				"dateTime\t{} "
+			],
+			[
+				"th",
+				"throw\t? "
+			],
+			[
+				"is",
+				"instanceof\t? "
+			],
+			[
+				"In",
+				"InputError(message)\tfn "
+			],
+			[
+				"kie",
+				"killerRabbit\t{} "
+			],
+			[
+				"old",
+				"oldKillerRabbit\t{} "
+			],
+			[
+				"bl",
+				"blackRabbit\t{} "
+			],
+			[
+				"a",
+				"array\t? "
+			],
+			[
+				"p",
+				"push(newelt) -> number\tfn "
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"gr",
+				"greaterThan10(m) -> bool\tfn "
+			],
+			[
+				"gre",
+				"greaterThan(n) -> fn(m: ?) -> bool\tfn "
+			],
+			[
+				"for",
+				"forEach(array, actiom)\tfn "
+			],
+			[
+				"in",
+				"indexOf(elt, from?) -> number\tfn "
+			],
+			[
+				"ma",
+				"map\t{} "
+			],
+			[
+				"ev",
+				"event\t? "
+			],
+			[
+				"do",
+				"doh\tstr "
+			],
+			[
+				"to",
+				"toUpperCase() -> string\tfn "
+			],
+			[
+				"wr",
+				"wrap2() -> number\tfn "
+			],
+			[
+				"fu",
+				"function\t? "
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"Ma",
+				"Math\t{} "
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "test_parse.sublime-project",
+			"settings":
+			{
+				"buffer_size": 378,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/JSHint/JSHint.sublime-build",
+					""
+				],
+				[
+					"Packages/User/node.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/node.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"Snippet: ",
+				"Snippet: setTimeout function"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/mmarshak/training/js_parse_test_dec_2016"
+	],
+	"file_history":
+	[
+		"/Users/mmarshak/training/js_parse_test_dec_2016/app.js",
+		"/Users/mmarshak/training/js_parse_test_dec_2016/.tern-project",
+		"/Users/mmarshak/training/js_parse_test_dec_2016/package.json",
+		"/Users/mmarshak/training/nodejs_web_development/chap11/test-deleteFile.js",
+		"/Users/mmarshak/training/nodejs_web_development/book_original_source_code/Node.js Web Development_code/Chapter 4/fibonacci/app.js",
+		"/Users/mmarshak/training/nodejs_web_development/book_original_source_code/Node.js Web Development_code/Chapter 4/fibonacci/views/error.ejs.html",
+		"/Users/mmarshak/training/nodejs_web_development/.jshintrc",
+		"/Users/mmarshak/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/mmarshak/Library/Application Support/Sublime Text 3/Packages/User/Tern.sublime-settings",
+		"/Users/mmarshak/training/nodejs_web_development/.tern-project",
+		"/Users/mmarshak/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/mmarshak/training/java_script_tests/test.js",
+		"/Users/mmarshak/training/java_script_tests/garble.js",
+		"/Users/mmarshak/training/java_script_tests/garble2.js",
+		"/Users/mmarshak/Library/Application Support/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
+		"/Users/mmarshak/training/java_script_tests/test2.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "test_parse.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 217.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "test_parse.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

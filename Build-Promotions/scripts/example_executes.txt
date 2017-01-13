@@ -1,0 +1,17 @@
+Run from the drectory while the js file exist
+
+Test Run for 1 file
+~~~~~~~~~~~~~~~~~~~~
+DEBUG=* PRODUCTION_DB=1 ACTIVE_RUN=0 PROCESS_ALL_DIR=0 RESTAURANT_PROMOTION_DIR=schedules/2017/Boston/Jan2017 node schedule_promotions.js  <filename>
+
+Test Run for whole directory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG=* PRODUCTION_DB=1 ACTIVE_RUN=0 PROCESS_ALL_DIR=1 RESTAURANT_PROMOTION_DIR=schedules/2017/Boston/Jan2017 node schedule_promotions.js  
+
+Active Run for 1 file
+~~~~~~~~~~~~~~~~~~~~
+DEBUG=* PRODUCTION_DB=1 ACTIVE_RUN=1 PROCESS_ALL_DIR=0 RESTAURANT_PROMOTION_DIR=schedules/2017/Boston/Jan2017 node schedule_promotions.js  <filename>
+
+Active Run for whole directory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DEBUG=* PRODUCTION_DB=1 ACTIVE_RUN=1 PROCESS_ALL_DIR=1 RESTAURANT_PROMOTION_DIR=schedules/2017/Boston/Jan2017 node schedule_promotions.js  

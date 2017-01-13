@@ -5,13 +5,10 @@
     "jquery"
   ],
   "loadEagerly": [
-    "/Users/mmarshak/training/js_parse_test_dec_2016/*.js",
-    "Parse-SDK-JS-master/src/Parse.js"
+    "./*.js",
+    "Parse-SDK-JS-master/src/Parse.js",
+    "/Users/mmarshak/training/js_parse_test_dec_2016/*.js"
 
-  ],
-  "dontLoad": [
-     "/Users/mmarshak/training/js_parse_test_dec_2016/*.js",
-    "Parse-SDK-JS-master/src/Parse.js"
   ],
   "plugins": {
     "complete_strings": {

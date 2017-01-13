@@ -9,6 +9,7 @@ const util = require('util');
 //const moment    	= require("moment");
 var   moment 		= require('moment-timezone');
 const moment_range  = require("moment-range");
+var prompt = require('prompt');
 
 var Parse = require('parse/node');
 
@@ -16,6 +17,17 @@ var Parse = require('parse/node');
 
 const log    = require("debug")("setPromotions");
 const logError  = require("debug")("setPromotions:error");
+
+const APP_KEY         = "l7F9xkTQrSxhf0RuXVlZ7MpC1rM96aeQrN8D3lGd";
+const JAVA_SCRIPT_KEY = "ntZoSdTpNLU2hRbRqF5gaYYpnGiTFGVHejHvDsEN";
+const MASTER_KEY      = "VuOyNjUL4o4w02o9iif8KP9GzWtyIJwhRYFFtWjG";
+
+
+// Android Test App DB
+const TEST_APP_KEY         = "2wlLD2heOTJngATM5tu7w8EVmWdTA7TYTE1Ek6eE";
+const TEST_JAVA_SCRIPT_KEY = "fGCDyU5YTyV3sDcNx10MXAXKuRAVzEhwpFoGE8y3";
+const TEST_MASTER_KEY      = "fwnz4nF4pCr6DgoQl6Xj8hiPcwF3exeKWWOxcip6";
+
 
 // set this namespace to log via console.log
 //log.log = console.log.bind(console); // don't forget to bind to console!
@@ -38,24 +50,115 @@ moment.tz.setDefault("America/New_York");
 
 const DAYS_OF_WEEK = [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-// When connecting to Parse server - this are the crenetail for the Android test DB App
-//Parse.initialize("2wlLD2heOTJngATM5tu7w8EVmWdTA7TYTE1Ek6eE");
-//Parse.serverURL = 'https://cf6b06b5.ngrok.io/pserver';
 
-// Live Parse Server credentails
-Parse.initialize("l7F9xkTQrSxhf0RuXVlZ7MpC1rM96aeQrN8D3lGd");
-Parse.serverURL = 'https://www.mmparse.com/pserver';
+prompt.start();
 
+if (process.env.PRODUCTION_DB === undefined ) {
+	logError("PRODUCTION_DB is not defined, it should be set to 1 (use production DB) or 0 (use Test_Android_App DB)");
+	return;
+}
+
+if (process.env.PRODUCTION_DB !== "0" && process.env.PRODUCTION_DB !== "1"  ) {
+	logError("PRODUCTION_DB is not valid, it should be set to  1 (use production DB) or 0 (use Test_Android_App DB)");
+	return;
+}
+
+if (process.env.ACTIVE_RUN === undefined ) {
+	logError("ACTIVE_RUN is not defined, it should be set to 1 (schedule promotion) or 0 (just check)");
+	return;
+}
+
+if (process.env.ACTIVE_RUN !== "0" && process.env.ACTIVE_RUN !== "1"  ) {
+	logError("ACTIVE_RUN is not valid, it should be set to 1 (schedule promotion) or 0 (just check)");
+	return;
+}
+
+
+if (process.env.PROCESS_ALL_DIR === undefined) {
+	logError("PROCESS_ALL_DIR is not defined, it should be set to 1 (process all file in directory) or 0 (do only one restaurant as defined in argv[2])");
+	return;
+}
+
+if (process.env.PROCESS_ALL_DIR !== "0" && process.env.PROCESS_ALL_DIR !== "1") {
+	logError("PROCESS_ALL_DIR is not valid, it should be set to 1 (process all file in directory) or 0 (do only one restaurant as defined in argv[2])");
+	return;
+}
+
+
+if (process.env.PROCESS_ALL_DIR === "1"  && process.argv[2] ) {
+	logError("PROCESS_ALL_DIR  can not be set when we asked to process only one file (argv[2])");
+	return;
+}
 
 if (process.env.RESTAURANT_PROMOTION_DIR === undefined) {
 	logError("RESTAURANT_PROMOTION_DIR is not defined");
 	return;
 }
 
-log("process.argv[2]) = " + process.argv[2]);
 
-// Read promotions from disk and schedule one if needed
-scheduleFuturePromotions(process.env.ACTIVE_RUN === undefined);
+const activeRun = process.env.ACTIVE_RUN === "1";
+log("activeRun = %s", activeRun);
+
+
+log("process.env.PRODUCTION_DB				= %s", process.env.PRODUCTION_DB === "1" ? "Production" : "Test_Android_App");
+log("process.env.RESTAURANT_PROMOTION_DIR	= %s", process.env.RESTAURANT_PROMOTION_DIR);
+log("process.env.ACTIVE_RUN					= %s %s", process.env.ACTIVE_RUN,  typeof process.env.ACTIVE_RUN);
+log("process.env.PROCESS_ALL_DIR			= %s", process.env.PROCESS_ALL_DIR);
+
+log("only one restaurant - argv[2])			= %s %s"  ,process.argv[2],typeof process.argv[2] );
+
+prompt.get([{
+		description: 'Does this look right? (Y/n)',
+		name        : "answer"
+	}], function (err, result) {
+		    if (err) { return onErr(err); }
+		    console.log('Command-line input received:');
+		    console.log('  answer: ' + result.answer);
+
+		    if (result.answer !== "Y" && result.answer !== "n") {
+		    	onErr("Illegal answer, only allowed answers are Y or n");
+		    }
+
+		    if (result.answer === "Y") {
+			    log("#### Now excute .... activeRun = %s", activeRun);
+			    setPraseConnection();
+			    // Read promotions from disk and schedule one if needed
+				scheduleFuturePromotions(!activeRun);
+			}
+			else {
+				log("#### Aborting ....");
+			}
+  });
+
+ function onErr(err) {
+    console.log(err);
+   process.exit(1);
+ }
+
+return;
+
+
+
+
+function setPraseConnection() {
+	// When connecting to Parse server - this are the crenetail for the Android test DB App
+	//Parse.initialize("2wlLD2heOTJngATM5tu7w8EVmWdTA7TYTE1Ek6eE");
+	//Parse.serverURL = 'https://cf6b06b5.ngrok.io/pserver';
+
+	if (process.env.PRODUCTION_DB === "1") {
+		// Live Parse Server credentails
+		Parse.initialize(APP_KEY, JAVA_SCRIPT_KEY, MASTER_KEY);
+		//Parse.serverURL = 'https://www.mmparse.com/pserver';
+		Parse.serverURL = 'https://cf6b06b5.ngrok.io/pserver';
+	}
+	else {
+		// Test Parse Server credentails
+		Parse.initialize(TEST_APP_KEY, TEST_JAVA_SCRIPT_KEY, TEST_MASTER_KEY);
+		//Parse.serverURL = 'https://www.mmparse.com/pserver';
+		Parse.serverURL = 'https://cf6b06b5.ngrok.io/pserver';
+	}
+
+}
 
 
 // Read the promotions from disk and schedule one if this is not a validation run
@@ -229,7 +332,13 @@ function scheduleFuturePromotions(validationRunOnly) {
 									    	log("*** fileName = %s , restaurantName - %s restaurantObjectId = %s generating %s promotions", next.fileName, 
 													restaurantName, restaurantObjectId,  newPromotions.length );	
 
-									    	return Parse.Object.saveAll(newPromotions);	
+									    	return Parse.Object.saveAll(newPromotions, { useMasterKey: true })
+									    		.then((results) => {
+									    			log ("results = %s", results);	
+									    		})
+									    		.catch((err) => {
+									    			logError("err = %s", err);
+									    		} );	
 
 										});
 
