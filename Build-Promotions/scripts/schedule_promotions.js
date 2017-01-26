@@ -7,8 +7,10 @@ var Parse = require('parse/node');
 const util = require('util');
 
 //const moment    	= require("moment");
-var   moment 		= require('moment-timezone');
+const   moment 		= require('moment-timezone');
 const moment_range  = require("moment-range");
+
+
 var prompt = require('prompt');
 
 var Parse = require('parse/node');
@@ -149,7 +151,7 @@ function setPraseConnection() {
 		// Live Parse Server credentails
 		Parse.initialize(APP_KEY, JAVA_SCRIPT_KEY, MASTER_KEY);
 		//Parse.serverURL = 'https://www.mmparse.com/pserver';
-		Parse.serverURL = 'https://cf6b06b5.ngrok.io/pserver';
+		Parse.serverURL = 'https://289f5cd9.ngrok.io/pserver';
 	}
 	else {
 		// Test Parse Server credentails
