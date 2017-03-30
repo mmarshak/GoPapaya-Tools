@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "w0yqN9wN2q",
+	"restaurantName"	: "Sol Azteca",
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "5:00pm",
+			"endTime"   : "9:40pm",
+		    "discount"  : 30,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 3,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

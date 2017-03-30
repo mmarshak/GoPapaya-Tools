@@ -1,0 +1,61 @@
+{
+	"restaurantID" 		: "HZypcUWlDH",
+	"restaurantName"	: "Coolidge Corner Clubhouse"  ,
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Mon-Fri",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "11:30am",
+			"endTime"	: "11:30pm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "Sat",
+			"dayOfWeek" : ["Sat"],
+			"startTime" : " 9:00am",
+			"endTime"	: "11:30pm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "Sun lucnh",
+			"dayOfWeek" : ["Sun"],
+			"startTime" : " 9:00am",
+			"endTime"	: "11:00am",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "Sun dinner",
+			"dayOfWeek" : ["Sun"],
+			"startTime" : " 6:00pm",
+			"endTime"	: "11:30pm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

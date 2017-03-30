@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "lli794LkY8",
+	"restaurantName"	: "Shays Pub & Wine Bar",
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Lunch week days",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "11:30am",
+			"endTime"   : "2:30pm",
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 3,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

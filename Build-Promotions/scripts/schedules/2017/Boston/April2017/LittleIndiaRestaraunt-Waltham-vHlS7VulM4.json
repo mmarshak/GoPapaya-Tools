@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "vHlS7VulM4",
+	"restaurantName"	: "Little India",
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "5:00pm",
+			"endTime"   : "9:00pm",
+		    "discount"  : 25,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

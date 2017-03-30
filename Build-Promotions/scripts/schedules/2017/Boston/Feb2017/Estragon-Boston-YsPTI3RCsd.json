@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "YsPTI3RCsd",
+	"restaurantName"	: "Estragon",
+	"startDate"			: "02/15/2017",
+	"endDate"			: "02/28/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "5:00pm",
+			"endTime"   : "9:00pm",
+		    "discount"  : 25,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

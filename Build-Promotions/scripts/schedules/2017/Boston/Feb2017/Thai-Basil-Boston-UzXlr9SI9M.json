@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "UzXlr9SI9M",
+	"restaurantName"	: "Thai Basil",
+	"startDate"			: "02/25/2017",
+	"endDate"			: "02/28/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [
+		{
+			"name"	    : "Sun-Thur",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "3:00pm",
+			"endTime"   : "9:00pm",
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 4,
+			"tableFor4" : 3,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

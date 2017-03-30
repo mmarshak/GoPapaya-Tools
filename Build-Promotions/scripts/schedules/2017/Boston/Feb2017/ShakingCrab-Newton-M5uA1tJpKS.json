@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "M5uA1tJpKS",
+	"restaurantName"	: "Shaking Crab",
+	"startDate"			: "02/01/2017",
+	"endDate"			: "02/28/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "5:00pm",
+			"endTime"   : "9:50pm",
+		    "discount"  : 10,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

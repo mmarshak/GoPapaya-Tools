@@ -36,6 +36,35 @@ exports.KVoiceSMSCancel                     = "VoiceSMSCCancel";              //
 exports.KVoiceSMShMiss                      = "VoiceSMSCMiss";                //
 
 
+
+
+/****************************************************/
+// Promotion family/order amd reservation order type
+/****************************************************/
+
+// Promotion Family
+
+exports.PROMOTION_FAMILY_NO_PROMOTION        = 0;
+exports.PROMOTION_FAMILY_DINE_IN             = (1<<0);
+exports.PROMOTION_FAMILY_TAKE_OUT            = (1<<1);  // Include walk, phone, online
+exports.PROMOTION_FAMILY_DELIVERY            = (1<<2);
+
+// Type of promotion (sub catgory of Family)
+
+exports.PROMOTION_NO_PROMOTION              = 0;
+    
+exports.PROMOTION_DINE_IN                   = (1<<0);
+    
+exports.PROMOTION_TAKE_OUT_PHONE            = (1<<1);
+exports.PROMOTION_TAKE_OUT_WALK             = (1<<2);
+exports.PROMOTION_TAKE_OUT_ONLINE           = (1<<3);
+
+exports.PROMOTION_TAKE_OUT_UNUSED_1         = (1<<4);
+exports.PROMOTION_TAKE_OUT_UNUSED_2         = (1<<5);
+    
+exports.PROMOTION_DELIVERY                  = (1<<6);
+
+
 /*****************************/
 // Parse Activity class keys
 /****************************/
@@ -300,6 +329,13 @@ exports.KParseRestaurantZagatRatingKey           = "zagatRating";             //
 exports.KParseRestaurantTestKey 		         = "testRestaurant";          // BOOL - indicate that the this is a test restaurant
 
 
+// This fields are used by the server only to control which type of promotion family they support 
+exports.KParseRestaurantAllowDineInKey           = "allowDineIn";       	// This restaurant allow dine in
+exports.KParseRestaurantAllowTakeOutKey          = "allowTakeOut";       	// This restaurant allow dine in
+exports.KParseRestaurantAllowDeliveryKey         = "allowDelivery";       	// This restaurant allow delivery
+
+
+
 /****************************************/
 // Parse Promotion class keys
 /****************************************/
@@ -329,6 +365,8 @@ exports.KParsePromotionTotalTables5Key        = "totalTables5";         // NSNum
 
 exports.KParsePromotionTotalTables6Key        = "totalTables6";         // NSNumber   -- Tables for 6
 
+exports.KParsePromotionMaxPartySizeKey        = "maxPartySize";         // NSNumber   -- Max Party Size (used for talkout and delivery)
+
 
 exports.KParsePromotionAlcoholIncludedKey     = "alcoholIncluded";     // BOOL
 exports.KParsePromotionSpecialNotesKey        = "specialNotes";        // NSArray
@@ -345,6 +383,13 @@ exports.KParsePromotionBlockSingleGuestKey    = "BlockSingleGuest";       // NSn
 
 exports.KParsePromotionVersionKey               = "version";             // NSnumber- the schema mVersion of the promotion, at this time we do not support this field
 
+exports.KParsePromotionTypeBitMaskKey         = "promotionTypeBitMask";     // NSInteger   0 - Dine in, 1 - Talk out Walk , 2 - Talk Out Phone
+
+exports.KParsePromotionTypeNameArrayKey       = "promotionTypeNameArray";   // NSString   "Dine-In", "Talkout-Walk", "Talkout-Phone"
+
+exports.KParsePromotionPromotionFamilyKey     = "promotionFamily";     		// NSInteger   0 - Dine in, 1 - Take out Walk , 2 - Delivery
+
+exports.KParsePromotionPromotionNameFamilyKey = "promotionNameFamily"; 		// NSString   "Dine", "Takeout", "Delivery"
 
 
 

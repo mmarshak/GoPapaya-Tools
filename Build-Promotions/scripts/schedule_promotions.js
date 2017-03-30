@@ -151,13 +151,15 @@ function setPraseConnection() {
 		// Live Parse Server credentails
 		Parse.initialize(APP_KEY, JAVA_SCRIPT_KEY, MASTER_KEY);
 		//Parse.serverURL = 'https://www.mmparse.com/pserver';
-		Parse.serverURL = 'https://289f5cd9.ngrok.io/pserver';
+		Parse.serverURL = 'http://127.0.0.1:1337/pserver';
+		//Parse.serverURL = 'http://127.0.0.1:1337/pserver';
 	}
 	else {
 		// Test Parse Server credentails
 		Parse.initialize(TEST_APP_KEY, TEST_JAVA_SCRIPT_KEY, TEST_MASTER_KEY);
 		//Parse.serverURL = 'https://www.mmparse.com/pserver';
-		Parse.serverURL = 'https://cf6b06b5.ngrok.io/pserver';
+		Parse.serverURL = "http://10.10.10.74:1337/pserver";
+		//Parse.serverURL = 'https://cf6b06b5.ngrok.io/pserver';
 	}
 
 }
@@ -200,6 +202,7 @@ function scheduleFuturePromotions(validationRunOnly) {
 							let validationResult;
 							let startTime;
 							let endTime;
+							let promotionFamily;
 
 							if (process.argv[2] !== undefined &&
 								process.argv[2] !== (next.fileName + ".json")) {
@@ -211,8 +214,25 @@ function scheduleFuturePromotions(validationRunOnly) {
 							log("***fileName = %s  , object = %s", next.fileName,util.inspect(next.object, {showHidden: false, depth: null}));
 							validationResult = validatePromotionSchedule( next.fileName,  next.object);
 
-							startTime = validationResult.startDate;		// start at 00:00 hh:mm
-							endTime   = validationResult.endDate;
+							if(!validationResult) {
+								logError("*** fileName = %s , validation failed", next.fileName);
+								return Promise.reject("*** fileName = " + next.fileName + " , validation failed ");
+							}
+
+
+							startTime 		= validationResult.startDate;		// start at 00:00 hh:mm
+							endTime   		= validationResult.endDate;
+							promotionFamily = validationResult.promotionFamily;
+
+							// For now we support only dine in and takoeut
+							if (promotionFamily !== AppConstants.PROMOTION_FAMILY_DINE_IN && 
+								promotionFamily !== AppConstants.PROMOTION_FAMILY_TAKE_OUT   ) {
+
+								logError("*** fileName = %s , unsupported promotionFamily = %s", next.fileName, promotionFamily);
+								return Promise.reject("*** fileName = " + next.fileName + " , unsupported promotionFamily  = " + promotionFamily);
+
+							}
+
 
 							startTime = moment(startTime).hour(0).minute(0).second(0).toDate();	
 							endTime = moment(endTime).hour(23).minute(59).second(59).toDate();
@@ -231,7 +251,8 @@ function scheduleFuturePromotions(validationRunOnly) {
 							let restaurantName  	= promotionScheduleObjectsArray[0].restaurantName;
 							let restaurantObjectId 	= promotionScheduleObjectsArray[0].restaurantObjectId;
 
-							log ("restaurantName = %s , restaurantObjectId= %s, startTime = %s , endTime = %s",restaurantName, restaurantObjectId, startTime, endTime);
+							log ("restaurantName = %s , restaurantObjectId= %s, startTime = %s , endTime = %s promotionFamily = %s",
+								  restaurantName, restaurantObjectId, startTime, endTime, promotionFamily);
 
 							let restaurant = Restaurant.createWithoutData(restaurantObjectId);	
 
@@ -256,16 +277,57 @@ function scheduleFuturePromotions(validationRunOnly) {
 										log("Restaurant name match");
 									}
 
+									// Check that the restaurant support the type of the promotion
+									let allowDineIn   = restaurantObj.get(AppConstants.KParseRestaurantAllowDineInKey);
+									let allowTakeOut  = restaurantObj.get(AppConstants.KParseRestaurantAllowTakeOutKey);
+									let allowDelivery = restaurantObj.get(AppConstants.KParseRestaurantAllowDeliveryKey);
 
-									let query = new Parse.Query(Promotion);
+									// For now we do not allow delivery
 
-									query.equalTo(AppConstants.KParsePromotionRestaurantKey, restaurant);	
-									query.greaterThanOrEqualTo(AppConstants.KParsePromotionStartTimeKey, startTime);
-									query.lessThanOrEqualTo(AppConstants.KParsePromotionEndTimeKey, endTime);
+									if (allowDineIn === undefined){
+										logError("*** fileName = %s , restaurantName - %s restaurantObjectId = %s missing allowDineIn field!", next.fileName, 
+											restaurantName, restaurantObjectId,restaurantObj.get(AppConstants.KParseRestaurantNameKey), restaurantName );	
 
-									query.notEqualTo(AppConstants.KParsePromotionCanceledKey, true);
+										return Promise.reject("fileName " + next.fileName + " missing allowDineIn field");
+									}
 
-									return query.find()
+									if (allowTakeOut === undefined){
+										logError("*** fileName = %s , restaurantName - %s restaurantObjectId = %s missing allowTakeOut field!", next.fileName, 
+											restaurantName, restaurantObjectId,restaurantObj.get(AppConstants.KParseRestaurantNameKey), restaurantName );	
+
+										return Promise.reject("fileName " + next.fileName + " missing allowTakeOut field");
+									}
+
+									if (promotionFamily === AppConstants.PROMOTION_FAMILY_DINE_IN && !allowDineIn){
+										logError("*** fileName = %s , restaurantName - %s promotionFamily = %s restaurantObjectId = %s restaurant does not support dine-in!!!", next.fileName, 
+											restaurantName, promotionFamily, restaurantObjectId,restaurantObj.get(AppConstants.KParseRestaurantNameKey), restaurantName );	
+
+										return Promise.reject("fileName " + next.fileName + " restaurant does not support dine-in");
+									}
+
+									if (promotionFamily === AppConstants.PROMOTION_FAMILY_TAKE_OUT && !allowTakeOut){
+										logError("*** fileName = %s , restaurantName - %s promotionFamily = %s restaurantObjectId = %s restaurant does not support take-out!!!", next.fileName, 
+											restaurantName,promotionFamily ,  restaurantObjectId,restaurantObj.get(AppConstants.KParseRestaurantNameKey), restaurantName );	
+
+										return Promise.reject("fileName " + next.fileName + " restaurant does not support takeout");
+									}
+
+
+
+									let promotionQuery = new Parse.Query(Promotion);
+
+									promotionQuery.equalTo(AppConstants.KParsePromotionRestaurantKey, restaurant);	
+									promotionQuery.greaterThanOrEqualTo(AppConstants.KParsePromotionStartTimeKey, startTime);
+									promotionQuery.lessThanOrEqualTo(AppConstants.KParsePromotionEndTimeKey, endTime);
+
+									promotionQuery.notEqualTo(AppConstants.KParsePromotionCanceledKey, true);
+
+									// We are looking only for conflict with promotion of the same promotion family
+									// So we allow two promotion for the same restaurant at the same time as long one is dine in and the 
+									promotionQuery.equalTo(AppConstants.KParsePromotionPromotionFamilyKey, promotionFamily);
+
+
+									return promotionQuery.find()
 										.then((objects) => {
 
 											log("%s Got %s results for promotion query", next.fileName, objects.length);
@@ -279,7 +341,8 @@ function scheduleFuturePromotions(validationRunOnly) {
 									    		logError("*** fileName = %s , restaurantName - %s restaurantObjectId = %s There is allready other promotion for that time period %s", next.fileName, 
 													restaurantName, restaurantObjectId,  restaurantName );	
 
-													return Promise.reject("fileName " + next.fileName + " There is allready other promotion for that time period");
+													return Promise.reject("fileName " + next.fileName + " There is allready other promotion for that time period" +
+														"promotionFamily = " + promotionFamily);
 									    	}
 
 									    	if (validationRunOnly) {
@@ -303,7 +366,17 @@ function scheduleFuturePromotions(validationRunOnly) {
 												promotion.set(AppConstants.KParsePromotionEndTimeKey 	     , promotionScheduleObject.endTime);
 												promotion.set(AppConstants.KParsePromotionOriginalEndTimeKey , promotionScheduleObject.endTime);
 										    											        
-											    promotion.set(AppConstants.KParsePromotionTotalTables2Key,    promotionScheduleObject.tableFor2 );
+											    // For takeout, delivery the max number of order is saved in the table for 2
+											    if (promotionFamily === AppConstants.PROMOTION_FAMILY_DINE_IN) {
+												    promotion.set(AppConstants.KParsePromotionTotalTables2Key,    promotionScheduleObject.tableFor2 );
+												    promotion.set(AppConstants.KParsePromotionMaxPartySizeKey,    0 );
+												}
+												else if (promotionFamily === AppConstants.PROMOTION_FAMILY_TAKE_OUT){
+													  promotion.set(AppConstants.KParsePromotionTotalTables2Key,  promotionScheduleObject.maxNumberOfOrders );
+													  promotion.set(AppConstants.KParsePromotionMaxPartySizeKey,  promotionScheduleObject.maxNumberOfOrders );
+												}
+
+
 											    promotion.set(AppConstants.KParsePromotionTotalTables4Key,    promotionScheduleObject.tableFor4 );
 											    promotion.set(AppConstants.KParsePromotionTotalTables5Key,    promotionScheduleObject.tableFor5 );
 											    promotion.set(AppConstants.KParsePromotionTotalTables6Key,    promotionScheduleObject.tableFor6 );
@@ -325,6 +398,23 @@ function scheduleFuturePromotions(validationRunOnly) {
 										        var tempArray = [""];
 											    		   
 										        promotion.set(AppConstants.KParsePromotionSpecialNotesKey, tempArray);
+
+										        // Set the new fields for promotion family, type, maxPartySize
+
+												promotion.set(AppConstants.KParsePromotionMaxPartySizeKey     	, promotionScheduleObject.maxPartySize);
+
+												promotion.set(AppConstants.KParsePromotionTypeBitMaskKey     	, promotionScheduleObject.promotionTypeBitMask);
+												
+												// Add the strings names
+												promotion.set(AppConstants.KParsePromotionTypeNameArrayKey     	, 
+																						getPromotionTypeNameArray(promotionScheduleObject.promotionTypeBitMask));
+												
+												promotion.set(AppConstants.KParsePromotionPromotionFamilyKey    	, promotionScheduleObject.promotionFamily);
+												
+												// Add the strings names
+												promotion.set(AppConstants.KParsePromotionPromotionNameFamilyKey , 
+																						getPromotionFamilyName(promotionScheduleObject.promotionFamily));
+
 
 											    log("Promotion = %s", util.inspect(promotion));
 
@@ -397,6 +487,22 @@ function validatePromotionSchedule(fileName, object) {
 		logError("Validation error - restaurantName, object = %s", util.inspect(object, {showHidden: false, depth: null}));
 		return null;
 	}
+
+
+	// Check promotionFamily, and convert it to int
+
+	if (object.promotionFamily === undefined || object.promotionFamily.length === 0) {
+		logError("Validation error - schedule's promotionFamily is missing, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+		return null;
+	}
+
+	let promotionFamily = getPromotionFamilyFromName(object.promotionFamily);
+
+	if (promotionFamily === -1){
+		logError("Validation error - schedule's promotionFamily is invalid, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+		return null;
+	}
+
 
 	if (object.startDate === undefined || object.startDate.length === 0){
 		logError("Validation error - startDate is missing , object = %s", util.inspect(object, {showHidden: false, depth: null}));
@@ -571,8 +677,6 @@ function validatePromotionSchedule(fileName, object) {
 		}
 
 
-
-
 		// Check tableFor2
 
 		if (schedule.tableFor2 === undefined) {
@@ -640,10 +744,149 @@ function validatePromotionSchedule(fileName, object) {
 			return null;
 		}
 
-		if (schedule.tableFor2 + schedule.tableFor4 + schedule.tableFor5 + schedule.tableFor6 === 0 ) {
-			logError("Validation error - schedule's total number (2,4,5,6) can not be zero, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+		// Check maxNumberOfOrders
+
+		if (schedule.maxNumberOfOrders === undefined) {
+			logError("Validation error - schedule's maxNumberOfOrders is missing, object = %s", util.inspect(object, {showHidden: false, depth: null}));
 			return null;
 		}
+
+		if (!Number.isInteger(schedule.maxNumberOfOrders)) {
+			logError("Validation error - schedule's maxNumberOfOrders is not a number, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+			return null;
+		}
+
+		if (schedule.maxNumberOfOrders < 0 || schedule.maxNumberOfOrders > 100) {
+			logError("Validation error - schedule's maxNumberOfOrders is out of range 0-100, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+			return null;
+		}
+
+
+		// Check maxPartySize
+
+		if (schedule.maxPartySize === undefined) {
+			logError("Validation error - schedule's maxPartySize is missing, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+			return null;
+		}
+
+		if (!Number.isInteger(schedule.maxPartySize)) {
+			logError("Validation error - schedule's maxPartySize is not a number, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+			return null;
+		}
+
+		if (schedule.maxPartySize < 0 || schedule.maxPartySize > 100) {
+			logError("Validation error - schedule's maxPartySize is out of range 0-100, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+			return null;
+		}
+
+		// Check promotionTypes and convert them to a bitmask
+
+		if (schedule.promotionTypes === undefined) {
+			logError("Validation error - schedule's promotionTypes is missing, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+			return null;
+		}
+
+		if (!Array.isArray(schedule.promotionTypes) || schedule.promotionTypes.length === 0) {
+			logError("Validation error - schedule's promotionTypes is not array or empty, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+			return null;
+		}
+ 
+ 		let promotionTypeBitMask = 0;
+
+		for (let promotionTypeString of schedule.promotionTypes){
+
+			let promotionType = getPromotionTypeFromName(promotionTypeString);
+
+			if (promotionType === -1) {
+				logError("Validation error - schedule's promotionTypes is not valid , object = %s", util.inspect(object, {showHidden: false, depth: null}));
+				return null;
+			}
+			else {
+
+				// Check that the promotion type's family is matching
+				let promotionFamilyfromPromotionType = getPromotionFamilyFromPromotionType(promotionType);
+
+				if (promotionFamily !==  promotionFamilyfromPromotionType){
+					logError("Validation error - schedule's promotionTypes is not valid, its type = %s its family = %s, but promotionFamily = %s  , object = %s", 
+							   promotionType,  promotionFamilyfromPromotionType, promotionFamily, util.inspect(object, {showHidden: false, depth: null}));
+
+					return null;
+				}
+
+				promotionTypeBitMask |= promotionType;
+			}
+		}
+
+		if (promotionTypeBitMask === 0) {
+			logError("Validation error - schedule's promotionTypes is empty (promotionTypeBitMask = 0), object = %s", util.inspect(object, {showHidden: false, depth: null}));
+			return null;
+		}
+
+		
+
+
+
+		// Specific check for promotion tpye
+		switch (promotionFamily) {
+
+				case AppConstants.PROMOTION_FAMILY_DINE_IN: {
+
+					if (schedule.tableFor2 + schedule.tableFor4 + schedule.tableFor5 + schedule.tableFor6 === 0 ) {
+						logError("Validation error - schedule's total number (2,4,5,6) can not be zero for dine in , object = %s", util.inspect(object, {showHidden: false, depth: null}));
+						return null;
+					}
+
+					if (schedule.maxNumberOfOrders !== 0 ) {
+						logError("Validation error - schedule's maxNumberOfOrders must be zero for dine in, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+						return null;
+					}
+
+					if (schedule.maxPartySize !== 0 ) {
+						logError("Validation error - schedule's maxPartySize must be zero for dine in, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+						return null;
+					}
+
+					break;
+				}
+				case AppConstants.PROMOTION_FAMILY_TAKE_OUT: {
+
+					if (schedule.tableFor2 !== 0 || schedule.tableFor4 !== 0 || schedule.tableFor5 !== 0 || schedule.tableFor6 !== 0) {
+						logError("Validation error - schedule's maxNumberOfOrders must be > 0 for take out, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+						logError("For pickup table for 2,4,5,6 must be zero, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+						return null;
+					}
+
+					if (schedule.maxNumberOfOrders === 0 ) {
+						logError("Validation error - schedule's maxNumberOfOrders must be > 0 for take out, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+						return null;
+					}
+
+					if (schedule.maxPartySize === 0 ) {
+						logError("Validation error - schedule's maxPartySize must be > 0 for take out, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+						return null;
+					}
+
+					var allowedPromotionType =  AppConstants.PROMOTION_TAKE_OUT_PHONE | AppConstants.PROMOTION_TAKE_OUT_WALK;
+
+					if ((promotionTypeBitMask & ~allowedPromotionType)){
+						logError("Validation error - schedule's promotionTypeBitMask is include unsupported promotion types, promotionTypeBitMask = %s object = %s", 
+							promotionTypeBitMask, util.inspect(object, {showHidden: false, depth: null}));
+						return null;
+					}
+
+
+					break;
+
+				}
+				default : {
+
+					logError("Validation error - promotionFamily not supported, object = %s", promotionFamily, util.inspect(object, {showHidden: false, depth: null}));
+					return null;
+				}
+			}
+
+
+
 
 
 		// Add this day promotion to promotionScheduleDayObjectsArray
@@ -651,7 +894,8 @@ function validatePromotionSchedule(fileName, object) {
 		for (let day of schedule.dayOfWeek){
 			let promotionScheduleDayObject = new PromotionScheduleDayObject(object.restaurantID, object.restaurantName , day, schedule.startTime, schedule.endTime, schedule. discount, 
 				schedule.duration, schedule.alcohol, schedule.tableFor2,
-				schedule.tableFor4, schedule.tableFor5, schedule.tableFor6);
+				schedule.tableFor4, schedule.tableFor5, schedule.tableFor6,
+				schedule.maxNumberOfOrders, schedule.maxPartySize, promotionFamily, promotionTypeBitMask );
 
 			promotionScheduleDayObjectsArray.push(promotionScheduleDayObject);
 		}
@@ -753,8 +997,12 @@ function validatePromotionSchedule(fileName, object) {
 				endPromotionTime.hour(moment(dayPromotionObject.endTime, "hh:mma").hour());
 				endPromotionTime.minute(moment(dayPromotionObject.endTime, "hh:mma").minute());
 
-				promotionScheduleObject = new PromotionScheduleObject(dayPromotionObject.restaurantObjectId, dayPromotionObject.restaurantName,  startPromotionTime.toDate(), endPromotionTime.toDate(), 
-					dayPromotionObject.discount, dayPromotionObject.duration, dayPromotionObject.alcohol, dayPromotionObject.tableFor2, dayPromotionObject.tableFor4, dayPromotionObject.tableFor5 , dayPromotionObject.tableFor6);
+				promotionScheduleObject = new PromotionScheduleObject(dayPromotionObject.restaurantObjectId, dayPromotionObject.restaurantName,  
+												startPromotionTime.toDate(), endPromotionTime.toDate(), 
+												dayPromotionObject.discount, dayPromotionObject.duration, dayPromotionObject.alcohol, 
+												dayPromotionObject.tableFor2, dayPromotionObject.tableFor4, dayPromotionObject.tableFor5 , dayPromotionObject.tableFor6,
+												dayPromotionObject.maxNumberOfOrders, dayPromotionObject.maxPartySize, 
+												dayPromotionObject.promotionFamily  , dayPromotionObject.promotionTypeBitMask  );
 
 
 				promotionScheduleObjectsArray.push(promotionScheduleObject);
@@ -799,10 +1047,190 @@ function validatePromotionSchedule(fileName, object) {
 	}
 
 	
-	return {startDate : startDate.toDate(), endDate: endDate.toDate(), promotionScheduleObjectsArray : promotionScheduleObjectsArray};
+	return {startDate : startDate.toDate(), endDate: endDate.toDate(), promotionScheduleObjectsArray : promotionScheduleObjectsArray, promotionFamily: promotionFamily};
 
 
 }
+
+
+
+/*********************************************************************/
+/*    Promotion types and family management  						 */
+/*********************************************************************/
+
+// Get the type of the reservation - dine-in, takeout walk, akeout phone
+function getPromotionTypeName(promotionType){
+   
+    var name = "xxx";
+    
+    switch (promotionType) {
+        case AppConstants.PROMOTION_DINE_IN:
+            name =  "Dine In";
+            break;
+        case AppConstants.PROMOTION_TAKE_OUT_WALK:
+            name=  "Take Out - Walk";
+            break;
+        case AppConstants.PROMOTION_TAKE_OUT_PHONE:
+            name = "Take Out - Phone";
+            break;
+        case AppConstants.PROMOTION_TAKE_OUT_ONLINE:
+            name = "Take Out - Online";
+            break;
+            
+        case AppConstants.PROMOTION_DELIVERY:
+            name = "Delivery";
+            break;
+            
+        default:
+            logError("getPromotionTypeName - Unknown promotionType = %s", promotionType);
+            break;
+    }
+    
+    return name;
+    
+}
+
+// Get the promotion type from promotion type name
+function getPromotionTypeFromName(promotionTypeName){
+   
+    var promotionType = -1;
+    
+    switch (promotionTypeName) {
+        case "Dine In":
+            promotionType = AppConstants.PROMOTION_DINE_IN;
+            break;
+        case "Take Out - Walk":
+            promotionType = AppConstants.PROMOTION_TAKE_OUT_WALK;
+            break;
+        case "Take Out - Phone":
+            promotionType = AppConstants.PROMOTION_TAKE_OUT_PHONE;
+            break;
+        case "Take Out - Online":
+            promotionType = AppConstants.PROMOTION_TAKE_OUT_ONLINE;
+            break;
+            
+        case "Delivery":
+            promotionType = AppConstants.PROMOTION_DELIVERY;
+            break;
+            
+        default:
+            logError("getPromotionTypeFromName - Unknown promotionTypeName = %s", promotionTypeName);
+            break;
+    }
+    
+    return promotionType;
+    
+}
+
+
+
+// Build a promotion Type Name array from type bitmask - dine-in, takeout walk, takeout phone
+function getPromotionTypeNameArray(promotionTypeBitMask){
+
+	var nameArray = [];
+
+	if (promotionTypeBitMask === undefined) {
+		logError("getPromotionTypeNameArray was called with a missing promotionTypeBitMask");
+		return nameArray;
+	}
+
+	if (promotionTypeBitMask & AppConstants.PROMOTION_DINE_IN){
+		nameArray.push(getPromotionTypeName(AppConstants.PROMOTION_DINE_IN));
+	}
+
+	if (promotionTypeBitMask & AppConstants.PROMOTION_TAKE_OUT_PHONE){
+		nameArray.push(getPromotionTypeName(AppConstants.PROMOTION_TAKE_OUT_PHONE));
+	}
+
+	if (promotionTypeBitMask & AppConstants.PROMOTION_TAKE_OUT_WALK){
+		nameArray.push(getPromotionTypeName(AppConstants.PROMOTION_TAKE_OUT_WALK));
+	}
+
+	if (promotionTypeBitMask & AppConstants.PROMOTION_TAKE_OUT_ONLINE){
+		nameArray.push(getPromotionTypeName(AppConstants.PROMOTION_TAKE_OUT_ONLINE));
+	}
+
+	if (promotionTypeBitMask & AppConstants.PROMOTION_DELIVERY){
+		nameArray.push(getPromotionTypeName(AppConstants.PROMOTION_DELIVERY));
+	}
+
+	return nameArray;
+
+}
+
+
+// Get the family of the promotion type used in the reservation - dine-in, takeout walk, takeout phone
+function getPromotionFamilyName (promotionFamily) {   
+
+    var name = "xxx";
+    
+    switch (promotionFamily) {
+        case AppConstants.PROMOTION_FAMILY_DINE_IN:
+            name =  "Dine In";
+            break;
+        case AppConstants.PROMOTION_FAMILY_TAKE_OUT:
+            name =  "Take Out";
+            break;
+        case AppConstants.PROMOTION_FAMILY_DELIVERY:
+            name = "Delivery";
+            break;
+        default:
+            log("getPromotionFamilyName - Unknown promotionType = %s", promotionFamily);
+            break;
+    }
+    
+    return name;
+    
+}
+
+// Get the family of the promotion type used in the reservation - dine-in, takeout walk, takeout phone
+function getPromotionFamilyFromName (promotionFamilyName) {   
+
+    var promotionFamily = -1;
+    
+    switch (promotionFamilyName) {
+        case "Dine In":
+            promotionFamily = AppConstants.PROMOTION_FAMILY_DINE_IN;
+            break;
+        case "Take Out":
+            promotionFamily = AppConstants.PROMOTION_FAMILY_TAKE_OUT;
+            break;
+        case "Delivery":
+            promotionFamily = AppConstants.PROMOTION_FAMILY_DELIVERY;
+            break;
+        default:
+            log("getPromotionFamilyFromName - Unknown promotionFamilyName = %s", promotionFamilyName);
+            break;
+    }
+    
+    return promotionFamily;
+    
+}
+
+
+
+// Get promotion Family from promotion type
+function getPromotionFamilyFromPromotionType(promotionType) {
+    
+    switch (promotionType) {
+        case AppConstants.PROMOTION_DINE_IN:
+            return AppConstants.PROMOTION_FAMILY_DINE_IN;
+            
+        case AppConstants.PROMOTION_TAKE_OUT_WALK:
+        case AppConstants.PROMOTION_TAKE_OUT_PHONE:
+        case AppConstants.PROMOTION_TAKE_OUT_ONLINE:
+            return AppConstants.PROMOTION_FAMILY_TAKE_OUT;
+            
+        case AppConstants.PROMOTION_DELIVERY:
+            return AppConstants.PROMOTION_FAMILY_DELIVERY;
+            
+        default:
+            log("getPromotionFamilyFromPromotionType - Unknown promotionType = %s", promotionType);
+            return -1;
+    }
+    
+}
+
 
 
 

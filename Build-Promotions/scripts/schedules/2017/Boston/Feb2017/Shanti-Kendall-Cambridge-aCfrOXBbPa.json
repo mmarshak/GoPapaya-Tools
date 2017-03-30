@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "aCfrOXBbPa",
+	"restaurantName"	: "Shanti Kendall"  ,
+	"startDate"			: "02/01/2017",
+	"endDate"			: "02/28/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Sun-Thu dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu"],
+			"startTime" : " 5:00pm",
+			"endTime"	: "10:00pm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 3,
+			"tableFor4" : 3,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "Fri-Sat dinner",
+			"dayOfWeek" : ["Fri", "Sat"],
+			"startTime" : " 5:00pm",
+			"endTime"	: "10:00pm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 2,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

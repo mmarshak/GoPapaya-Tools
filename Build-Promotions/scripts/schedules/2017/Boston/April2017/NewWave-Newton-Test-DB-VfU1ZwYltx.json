@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "VfU1ZwYltx",
+	"restaurantName"	: "New Wave",
+	"promotionFamily"   : "Take Out",
+	"startDate"			: "04/01/2017",
+	"endDate"			: "04/05/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "3:00pm",
+			"endTime"   : "9:30pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         : 10,
+			"maxNumberOfOrders"    : 55,       
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

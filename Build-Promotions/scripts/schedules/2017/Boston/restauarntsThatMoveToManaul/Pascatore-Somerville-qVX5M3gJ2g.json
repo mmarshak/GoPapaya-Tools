@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "qVX5M3gJ2g",
+	"restaurantName"	: "Pescatore",
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: ["1/1/2017" ],
+	"schedules"			: [
+		{
+			"name"	    : "Dinner1",
+			"dayOfWeek" : ["Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "4:00pm",
+			"endTime"   : "9:20pm",
+			"discount"  : 20,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 1,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Dinner2",
+			"dayOfWeek" : ["Sun"],
+			"startTime" : "4:00pm",
+			"endTime"   : "8:20pm",
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

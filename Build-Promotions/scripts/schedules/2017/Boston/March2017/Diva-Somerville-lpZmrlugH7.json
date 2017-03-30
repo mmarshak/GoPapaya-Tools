@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "lpZmrlugH7",
+	"restaurantName"	: "Diva",
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "11:30am",
+			"endTime"   : "2:30pm",
+		    "discount"  : 25,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 3,
+			"tableFor4" : 3,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "5:00pm",
+			"endTime"   : "10:00pm",
+		    "discount"  : 25,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 5,
+			"tableFor4" : 3,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

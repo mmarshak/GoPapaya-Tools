@@ -1,0 +1,48 @@
+{
+	"restaurantID" 		: "xDlMwavvr1",
+	"restaurantName"	: "Dosa Factory",
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "11:00am",
+			"endTime"   : "2:30pm",
+			"discount"  : 25,
+            "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Sun-Wed Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed"],
+			"startTime" : "3:00pm",
+			"endTime"   : "10:00pm",
+		    "discount"  : 35,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Thu-Sat Dinner",
+			"dayOfWeek" : ["Thu", "Fri", "Sat"],
+			"startTime" : "3:00pm",
+			"endTime"   : "10:00pm",
+		    "discount"  : 35,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

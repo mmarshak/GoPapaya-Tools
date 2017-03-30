@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "NkP02hAjnR",
+	"restaurantName"	: "Sweet Caroline’s"  ,
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "All-Day",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : " 3:00pm",
+			"endTime"	: "10:25pmm",
+			"discount"	: 30,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 1,
+			"tableFor4" : 4,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

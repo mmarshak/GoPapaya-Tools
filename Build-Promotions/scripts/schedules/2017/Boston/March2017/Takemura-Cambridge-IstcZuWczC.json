@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "IstcZuWczC",
+	"restaurantName"	: "Takemura",
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [ 
+		{
+			"name"	    : "Regular",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Sat"],
+			"startTime" : "11:30am",
+			"endTime"   : "9:30pm",
+			"discount"  : 10,
+            "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 4,
+			"tableFor4" : 4,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Friday",
+			"dayOfWeek" : ["Fri"],
+			"startTime" : "3:00pm",
+			"endTime"   : "9:30pm",
+		    "discount"  : 10,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 4,
+			"tableFor4" : 4,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

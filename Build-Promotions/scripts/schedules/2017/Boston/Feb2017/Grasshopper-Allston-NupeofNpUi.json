@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "NupeofNpUi",
+	"restaurantName"	: "Grasshopper"  ,
+	"startDate"			: "02/01/2017",
+	"endDate"			: "02/28/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : " 1:00pm",
+			"endTime"	: " 4:00pmm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 3,
+			"tableFor4" : 3,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : " 6:00pm",
+			"endTime"	: " 8:00pmm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 3,
+			"tableFor4" : 3,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

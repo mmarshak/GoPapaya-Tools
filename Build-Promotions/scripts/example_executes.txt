@@ -15,3 +15,10 @@ DEBUG=* PRODUCTION_DB=1 ACTIVE_RUN=1 PROCESS_ALL_DIR=0 RESTAURANT_PROMOTION_DIR=
 Active Run for whole directory
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 DEBUG=* PRODUCTION_DB=1 ACTIVE_RUN=1 PROCESS_ALL_DIR=1 RESTAURANT_PROMOTION_DIR=schedules/2017/Boston/Jan2017 node schedule_promotions.js  
+
+
+
+
+To pipe the stdout and sterr -
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Add in the end  2>&1 | tee output    , the output is file output

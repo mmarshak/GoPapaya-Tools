@@ -1,0 +1,35 @@
+{
+	"restaurantID" 		: "V99OAURyav",
+	"restaurantName"	: "Pepper Sky's"  ,
+	"startDate"			: "02/01/2017",
+	"endDate"			: "02/28/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Sun-Thu All-Day",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "12:00pm",
+			"endTime"	: " 9:00pmm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 2,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "Fri-Sat All-Day",
+			"dayOfWeek" : ["Fri", "Sat"],
+			"startTime" : "12:00pm",
+			"endTime"	: " 9:00pmm",
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

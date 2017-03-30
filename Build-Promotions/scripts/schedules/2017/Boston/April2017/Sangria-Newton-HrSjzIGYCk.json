@@ -1,0 +1,49 @@
+{
+	"restaurantID" 		: "HrSjzIGYCk",
+	"restaurantName"	: "Sangria",
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [ 
+		{
+			"name"	    : "Tues",
+			"dayOfWeek" : ["Tue"],
+			"startTime" : "5:00pm",
+			"endTime"   : "8:00pm",
+			"discount"  : 15,
+            "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Wed-Thu",
+			"dayOfWeek" : ["Wed", "Thu"],
+			"startTime" : "11:3apm",
+			"endTime"   : "8:00pm",
+			"discount"  : 15,
+            "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Friday, Sataurday",
+			"dayOfWeek" : ["Fri","Sat"],
+			"startTime" : "11:30am",
+			"endTime"   : "3:00pm",
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}
+

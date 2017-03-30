@@ -1,0 +1,75 @@
+{
+	"restaurantID" 		: "fE52XK7hoY",
+	"restaurantName"	: "Lumiere",
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [ 
+		{
+			"name"	    : "Week early",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "5:30pm",
+			"endTime"   : "6:00pm",
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 3,
+			"tableFor4" : 2,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Week late",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "8:30pm",
+			"endTime"   : "9:00pm",
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 3,
+			"tableFor4" : 2,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+                {
+			"name"	    : "Sun early",
+			"dayOfWeek" : ["Sun"],
+			"startTime" : "5:30pm",
+			"endTime"   : "6:00pm",
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 3,
+			"tableFor4" : 1,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Sun late",
+			"dayOfWeek" : ["Sun"],
+			"startTime" : "8:30pm",
+			"endTime"   : "9:00pm",
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},                
+        {
+			"name"	    : "Friday and Saturday",
+			"dayOfWeek" : ["Fri", "Sat"],
+			"startTime" : "9:00pm",
+			"endTime"   : "10:00pm",
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 3,
+			"tableFor4" : 2,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}
+

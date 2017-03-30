@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "EpUozF4gdL",
+	"restaurantName"	: "Cantina La Mexicana",
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [
+		{
+			"name"	    : "LunchDinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "11:00am",
+			"endTime"   : "9:30pm",
+		    "discount"  : 30,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 1,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		}
+	]
+}

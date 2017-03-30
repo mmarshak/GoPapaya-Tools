@@ -8,7 +8,9 @@ const log      = require('debug')('caching:CachedObject');
 const logError = require('debug')('caching:error');
 
 module.exports = class PromotionScheduleObject {
-	constructor(restaurantObjectId, restaurantName, startTime, endTime, discount, duration, alcohol, tableFor2, tableFor4, tableFor5 ,tableFor6){
+	constructor(restaurantObjectId, restaurantName, startTime, endTime, discount, duration, alcohol, tableFor2, tableFor4, tableFor5 ,tableFor6, 
+		maxNumberOfOrders, maxPartySize, promotionFamily, promotionTypeBitMask ){
+
 		this.restaurantObjectId = restaurantObjectId;
 		this.restaurantName		= restaurantName;
 		this.startTime   		= startTime;
@@ -20,6 +22,11 @@ module.exports = class PromotionScheduleObject {
 		this.tableFor4   		= tableFor4;
 		this.tableFor5   		= tableFor5;
 		this.tableFor6   		= tableFor6;
+
+		this.maxNumberOfOrders    = maxNumberOfOrders;
+		this.maxPartySize		  = maxPartySize;
+		this.promotionFamily      = promotionFamily;
+		this.promotionTypeBitMask = promotionTypeBitMask;
 		
 	}
 

@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "eiWdSYfGB1",
+	"restaurantName"	: "P. C. Dumpling Room",
+	"startDate"			: "03/01/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "LunchDinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "11:00am",
+			"endTime"   : "9:30pm",
+			"discount"  : 25,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"restaurantID" 		: "bnMCwdX9Pu",
+	"restaurantName"	: "Brothers Restaurant",
+	"startDate"			: "03/27/2017",
+	"endDate"			: "03/31/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [ 
+	{
+			"name"	    : "Weekday",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "11:00am",
+			"endTime"   : "9:30pm",
+		    "discount"  : 10,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 4,
+			"tableFor4" : 2,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		}
+	]
+}
