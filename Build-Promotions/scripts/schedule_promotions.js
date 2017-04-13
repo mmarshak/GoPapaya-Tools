@@ -151,7 +151,7 @@ function setPraseConnection() {
 		// Live Parse Server credentails
 		Parse.initialize(APP_KEY, JAVA_SCRIPT_KEY, MASTER_KEY);
 		//Parse.serverURL = 'https://www.mmparse.com/pserver';
-		Parse.serverURL = 'http://127.0.0.1:1337/pserver';
+		Parse.serverURL = "http://10.10.10.201:1337/pserver";
 		//Parse.serverURL = 'http://127.0.0.1:1337/pserver';
 	}
 	else {
@@ -373,7 +373,7 @@ function scheduleFuturePromotions(validationRunOnly) {
 												}
 												else if (promotionFamily === AppConstants.PROMOTION_FAMILY_TAKE_OUT){
 													  promotion.set(AppConstants.KParsePromotionTotalTables2Key,  promotionScheduleObject.maxNumberOfOrders );
-													  promotion.set(AppConstants.KParsePromotionMaxPartySizeKey,  promotionScheduleObject.maxNumberOfOrders );
+													  promotion.set(AppConstants.KParsePromotionMaxPartySizeKey,  promotionScheduleObject.maxPartySize );
 												}
 
 

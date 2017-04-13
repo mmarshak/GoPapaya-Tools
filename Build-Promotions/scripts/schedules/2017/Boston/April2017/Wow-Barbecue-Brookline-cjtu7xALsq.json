@@ -1,8 +1,9 @@
 {
 	"restaurantID" 		: "cjtu7xALsq",
 	"restaurantName"	: "Wow Barbecue",
-	"startDate"			: "03/01/2017",
-	"endDate"			: "03/31/2017",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
 	"skipDates"			: [],
 	"schedules"			: [
 		{
@@ -10,39 +11,48 @@
 			"dayOfWeek" : ["Mon", "Tue", "Wed"],
 			"startTime" : "5:00pm",
 			"endTime"   : "10:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 		    "discount"  : 25,
 		    "duration"  : 1800,
             "alcohol"   : 0,
 			"tableFor2" : 1,
 			"tableFor4" : 1,
-		    "tableFor5" : 0,
-			"tableFor6" : 0
+		    "tableFor5" : 1,
+			"tableFor6" : 1
 		},
                 {
 			"name"	    : "Thurs",
 			"dayOfWeek" : ["Thu"],
 			"startTime" : "11:30am",
 			"endTime"   : "10:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 		    "discount"  : 25,
 		    "duration"  : 1800,
             "alcohol"   : 0,
 			"tableFor2" : 1,
 			"tableFor4" : 1,
-		    "tableFor5" : 0,
-			"tableFor6" : 0
+		    "tableFor5" : 1,
+			"tableFor6" : 1
 		},
 		{
 			"name"	    : "Weekend",
 			"dayOfWeek" : ["Sun", "Fri", "Sat"],
 			"startTime" : "8:00pm",
 			"endTime"   : "10:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 		    "discount"  : 20,
 		    "duration"  : 1800,
             "alcohol"   : 0,
 			"tableFor2" : 1,
 			"tableFor4" : 1,
-			"tableFor5" : 0,
-			"tableFor6" : 0
+			"tableFor5" : 1,
+			"tableFor6" : 1
 		}
 	]
 }

@@ -1,8 +1,9 @@
 {
 	"restaurantID" 		: "HZypcUWlDH",
 	"restaurantName"	: "Coolidge Corner Clubhouse"  ,
-	"startDate"			: "03/01/2017",
-	"endDate"			: "03/31/2017",
+	"promotionFamily"   : "Dine In",
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
 	"skipDates"			: [ ],
 	"schedules"			: [
 		{
@@ -10,12 +11,15 @@
 			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
 			"startTime" : "11:30am",
 			"endTime"	: "11:30pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 			"discount"	: 20,
 			"duration"  : 1800,
 			"alcohol"	: 0,
 			"tableFor2" : 0,
 			"tableFor4" : 2,
-			"tableFor5" : 0,
+			"tableFor5" : 1,
 			"tableFor6" : 0
 		},
 		{
@@ -23,12 +27,15 @@
 			"dayOfWeek" : ["Sat"],
 			"startTime" : " 9:00am",
 			"endTime"	: "11:30pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 			"discount"	: 20,
 			"duration"  : 1800,
 			"alcohol"	: 0,
 			"tableFor2" : 0,
 			"tableFor4" : 2,
-			"tableFor5" : 0,
+			"tableFor5" : 1,
 			"tableFor6" : 0
 		},
 		{
@@ -36,12 +43,15 @@
 			"dayOfWeek" : ["Sun"],
 			"startTime" : " 9:00am",
 			"endTime"	: "11:00am",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 			"discount"	: 20,
 			"duration"  : 1800,
 			"alcohol"	: 0,
 			"tableFor2" : 0,
 			"tableFor4" : 2,
-			"tableFor5" : 0,
+			"tableFor5" : 1,
 			"tableFor6" : 0
 		},
 		{
@@ -49,12 +59,15 @@
 			"dayOfWeek" : ["Sun"],
 			"startTime" : " 6:00pm",
 			"endTime"	: "11:30pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 			"discount"	: 20,
 			"duration"  : 1800,
 			"alcohol"	: 0,
 			"tableFor2" : 0,
 			"tableFor4" : 2,
-			"tableFor5" : 0,
+			"tableFor5" : 1,
 			"tableFor6" : 0
 		}
 	]

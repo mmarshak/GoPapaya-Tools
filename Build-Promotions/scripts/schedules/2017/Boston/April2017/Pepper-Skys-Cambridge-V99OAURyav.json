@@ -1,8 +1,9 @@
 {
 	"restaurantID" 		: "V99OAURyav",
 	"restaurantName"	: "Pepper Sky's"  ,
-	"startDate"			: "03/01/2017",
-	"endDate"			: "03/31/2017",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
 	"skipDates"			: [ ],
 	"schedules"			: [
 		{
@@ -10,6 +11,9 @@
 			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu"],
 			"startTime" : "12:00pm",
 			"endTime"	: " 9:00pmm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 			"discount"	: 20,
 			"duration"  : 1800,
 			"alcohol"	: 0,
@@ -23,6 +27,9 @@
 			"dayOfWeek" : ["Fri", "Sat"],
 			"startTime" : "12:00pm",
 			"endTime"	: " 9:00pmm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 			"discount"	: 20,
 			"duration"  : 1800,
 			"alcohol"	: 0,

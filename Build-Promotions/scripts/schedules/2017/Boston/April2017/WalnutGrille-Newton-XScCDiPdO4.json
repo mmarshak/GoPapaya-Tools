@@ -1,8 +1,9 @@
 {
 	"restaurantID" 		: "XScCDiPdO4",
 	"restaurantName"	: "Walnut Grille",
-	"startDate"			: "03/01/2017",
-	"endDate"			: "03/31/2017",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
 	"skipDates"			: [ ],
 	"schedules"			: [
 		{
@@ -10,12 +11,15 @@
 			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 			"startTime" : "11:00am",
 			"endTime"   : "9:25pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 			"discount"  : 20,
 			"duration"  : 1800,
             "alcohol"   : 0,
 			"tableFor2" : 0,
-			"tableFor4" : 1,
-		    "tableFor5" : 0,
+			"tableFor4" : 0,
+		    "tableFor5" : 1,
 			"tableFor6" : 0
 		}
 	]

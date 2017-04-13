@@ -1,8 +1,9 @@
 {
 	"restaurantID" 		: "YsPTI3RCsd",
 	"restaurantName"	: "Estragon",
-	"startDate"			: "03/01/2017",
-	"endDate"			: "03/31/2017",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
 	"skipDates"			: [ ],
 	"schedules"			: [
 		{
@@ -10,13 +11,16 @@
 			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu"],
 			"startTime" : "5:00pm",
 			"endTime"   : "9:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 		    "discount"  : 25,
 		    "duration"  : 1800,
             "alcohol"   : 0,
 			"tableFor2" : 2,
 			"tableFor4" : 2,
-			"tableFor5" : 0,
-			"tableFor6" : 0
+			"tableFor5" : 1,
+			"tableFor6" : 1
 		}
 	]
 }

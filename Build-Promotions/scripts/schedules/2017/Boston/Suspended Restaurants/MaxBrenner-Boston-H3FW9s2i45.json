@@ -1,0 +1,42 @@
+{
+	"restaurantID" 		: "H3FW9s2i45",
+	"restaurantName"	: "Max Brenner",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "LunchDinner",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "10:00am",
+			"endTime"   : "10:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"  : 20,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		},
+		{
+			"name"	    : "Fri Lunch",
+			"dayOfWeek" : ["Fri"],
+			"startTime" : "10:00am",
+			"endTime"   : "3:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+			"tableFor5" : 1,
+			"tableFor6" : 1
+		}
+	]
+}

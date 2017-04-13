@@ -1,8 +1,9 @@
 {
 	"restaurantID" 		: "akY4fZL0NA",
 	"restaurantName"	: "Brookline Family Restaurant"  ,
-	"startDate"			: "3/1/2017",
-	"endDate"			: "3/31/2017",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
 	"skipDates"			: [ ],
 	"schedules"			: [
 		{
@@ -10,13 +11,16 @@
 			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu"],
 			"startTime" : " 3:00pm",
 			"endTime"	: " 9:00pmm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 			"discount"	: 15,
 			"duration"  : 1800,
 			"alcohol"	: 0,
 			"tableFor2" : 3,
 			"tableFor4" : 3,
-			"tableFor5" : 0,
-			"tableFor6" : 0
+			"tableFor5" : 1,
+			"tableFor6" : 1
 		}
 	]
 }

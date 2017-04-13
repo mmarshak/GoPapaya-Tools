@@ -1,8 +1,9 @@
 {
 	"restaurantID" 		: "K2yyEF2Fbr",
 	"restaurantName"	: "The Living Room",
-	"startDate"			: "03/01/2017",
-	"endDate"			: "03/31/2017",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
 	"skipDates"			: [ ],
 	"schedules"			: [
 		{
@@ -10,6 +11,9 @@
 			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 			"startTime" : "11:00am",
 			"endTime"   : "3:25pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 			"discount"  : 20,
 			"duration"  : 1800,
             "alcohol"   : 0,
@@ -23,6 +27,9 @@
 			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 			"startTime" : "6:00pm",
 			"endTime"   : "11:30pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 		    "discount"  : 20,
 		    "duration"  : 1800,
             "alcohol"   : 0,

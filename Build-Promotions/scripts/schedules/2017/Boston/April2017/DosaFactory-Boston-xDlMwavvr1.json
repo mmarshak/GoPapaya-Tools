@@ -1,8 +1,9 @@
 {
 	"restaurantID" 		: "xDlMwavvr1",
 	"restaurantName"	: "Dosa Factory",
-	"startDate"			: "03/01/2017",
-	"endDate"			: "03/31/2017",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
 	"skipDates"			: [ ],
 	"schedules"			: [
 		{
@@ -10,39 +11,48 @@
 			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 			"startTime" : "11:00am",
 			"endTime"   : "2:30pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0, 			
 			"discount"  : 25,
             "duration"  : 1800,
             "alcohol"   : 0,
 			"tableFor2" : 2,
 			"tableFor4" : 2,
-		    "tableFor5" : 0,
-			"tableFor6" : 0
+		    "tableFor5" : 1,
+			"tableFor6" : 1
 		},
 		{
 			"name"	    : "Sun-Wed Dinner",
 			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed"],
 			"startTime" : "3:00pm",
 			"endTime"   : "10:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0, 			
 		    "discount"  : 35,
 		    "duration"  : 1800,
             "alcohol"   : 0,
 			"tableFor2" : 2,
 			"tableFor4" : 2,
-			"tableFor5" : 0,
-			"tableFor6" : 0
+			"tableFor5" : 1,
+			"tableFor6" : 1
 		},
 		{
 			"name"	    : "Thu-Sat Dinner",
 			"dayOfWeek" : ["Thu", "Fri", "Sat"],
 			"startTime" : "3:00pm",
 			"endTime"   : "10:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0, 			
 		    "discount"  : 35,
 		    "duration"  : 1800,
             "alcohol"   : 0,
 			"tableFor2" : 1,
 			"tableFor4" : 1,
-			"tableFor5" : 0,
-			"tableFor6" : 0
+			"tableFor5" : 1,
+			"tableFor6" : 1
 		}
 	]
 }

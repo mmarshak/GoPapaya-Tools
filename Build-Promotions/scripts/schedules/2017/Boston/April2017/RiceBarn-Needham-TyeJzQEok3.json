@@ -1,8 +1,9 @@
 {
 	"restaurantID" 		: "TyeJzQEok3",
 	"restaurantName"	: "The Rice Barn",
-	"startDate"			: "03/01/2017",
-	"endDate"			: "03/31/2017",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
 	"skipDates"			: [ "1/1/2017"],
 	"schedules"			: [
 		{
@@ -10,26 +11,32 @@
 			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
 			"startTime" : "11:30am",
 			"endTime"   : "2:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 			"discount"  : 20,
 			"duration"  : 1800,
             "alcohol"   : 0,
 			"tableFor2" : 10,
 			"tableFor4" : 10,
-		    "tableFor5" : 0,
-			"tableFor6" : 0
+		    "tableFor5" : 1,
+			"tableFor6" : 1
 		},
 		{
 			"name"	    : "Dinner",
 			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 			"startTime" : "5:00pm",
 			"endTime"   : "8:30pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
 		    "discount"  : 20,
 		    "duration"  : 1800,
             "alcohol"   : 0,
 			"tableFor2" : 10,
 			"tableFor4" : 10,
-			"tableFor5" : 0,
-			"tableFor6" : 0
+			"tableFor5" : 1,
+			"tableFor6" : 1
 		}
 	]
 }
