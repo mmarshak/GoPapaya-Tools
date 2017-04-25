@@ -1,0 +1,42 @@
+{
+	"restaurantID" 		: "CbVl5D5mBn",
+	"restaurantName"	: "Rani",
+	"promotionFamily"   : "Take Out",
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "11:30am",
+			"endTime"   : " 2:30pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         :  6,
+			"maxNumberOfOrders"    : 40,  			
+			"discount"  : 15,
+			"duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "5:00pm",
+			"endTime"   : "9:30pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         :  6,
+			"maxNumberOfOrders"    : 40,  			
+		    "discount"  : 15,
+		    "duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

@@ -15,7 +15,7 @@
 			"maxPartySize"         : 0,
 			"maxNumberOfOrders"    : 0,  			
 			"discount"	: 15,
-			"duration"  : 1800,
+			"duration"  : 2700,
 			"alcohol"	: 0,
 			"tableFor2" : 3,
 			"tableFor4" : 3,

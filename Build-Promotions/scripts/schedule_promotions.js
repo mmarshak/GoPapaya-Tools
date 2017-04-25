@@ -151,7 +151,7 @@ function setPraseConnection() {
 		// Live Parse Server credentails
 		Parse.initialize(APP_KEY, JAVA_SCRIPT_KEY, MASTER_KEY);
 		//Parse.serverURL = 'https://www.mmparse.com/pserver';
-		Parse.serverURL = "http://10.10.10.201:1337/pserver";
+		Parse.serverURL = "http://10.10.10.224:1337/pserver";
 		//Parse.serverURL = 'http://127.0.0.1:1337/pserver';
 	}
 	else {
@@ -623,6 +623,17 @@ function validatePromotionSchedule(fileName, object) {
 			return null;
 		}
 		
+		let startTime = moment(schedule.startTime, "hh:mma");
+
+		let endTime   = moment(schedule.endTime, "hh:mma");
+
+		if (endTime.isBefore(startTime)) {
+			logError("Validation error - endTime is before startTime\n object = %s\n  endTime is before startTime. start Time = %s, end time = %s", 
+				util.inspect(object,  {showHidden: false, depth: null}), startTime, endTime );
+			return null;
+		}
+
+
 
 		// Check discount
 
@@ -654,8 +665,8 @@ function validatePromotionSchedule(fileName, object) {
 			return null;
 		}
 
-		if (schedule.duration < 1800 || schedule.duration > 7200 ) {
-			logError("Validation error - schedule's discount is out of range 1800-7200 seconds, object = %s", util.inspect(object, {showHidden: false, depth: null}));
+		if (schedule.duration < 900 || schedule.duration > 7200 ) {
+			logError("Validation error - schedule's duration is out of range 900-7200 seconds, object = %s", util.inspect(object, {showHidden: false, depth: null}));
 			return null;
 		}
 

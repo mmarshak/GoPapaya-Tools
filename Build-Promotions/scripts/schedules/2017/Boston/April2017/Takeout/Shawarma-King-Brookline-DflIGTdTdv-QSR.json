@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "DflIGTdTdv",
+	"restaurantName"	: "Shawarma King"  ,
+	"promotionFamily"   : "Take Out",
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Mid weel",
+			"dayOfWeek" : ["Tue", "Wed", "Thu","Fri","Sat"],
+			"startTime" : " 1:00am",
+			"endTime"	: " 5:00pmm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         :  6,
+			"maxNumberOfOrders"    : 20,  			
+			"discount"	: 10,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

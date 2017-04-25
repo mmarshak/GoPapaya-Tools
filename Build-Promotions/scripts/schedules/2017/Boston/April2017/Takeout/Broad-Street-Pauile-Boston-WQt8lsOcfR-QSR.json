@@ -1,0 +1,61 @@
+{
+	"restaurantID" 		: "WQt8lsOcfR",
+	"restaurantName"	: "Broad Street Paulies",
+	"promotionFamily"   : "Take Out",
+	"startDate"			: "04/01/2017",
+	"endDate"			: "04/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "30minutes before lunch",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "11:00am",
+			"endTime"   : "11:30am",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 2,
+			"maxNumberOfOrders"    : 4,       
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "13minutes before lunch",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "11:30am",
+			"endTime"   : "11:45am",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 2,
+			"maxNumberOfOrders"    : 2,       
+		    "discount"  : 20,
+		    "duration"  : 900,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "after lunch",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "1:00pm",
+			"endTime"   : "2:00pm",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 2,
+			"maxNumberOfOrders"    : 5,       
+		    "discount"  : 20,
+		    "duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}
+
+
+

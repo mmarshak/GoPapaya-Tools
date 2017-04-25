@@ -1,0 +1,42 @@
+{
+	"restaurantID" 		: "4j3BShnno0",
+	"restaurantName"	: "Battery Park",
+	"promotionFamily"   : "Dine In",
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [ 
+	{
+			"name"	    : "Weekday",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "2:00pm",
+			"endTime"   : "6:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  
+		    "discount"  : 15,
+		    "duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		},
+		{
+			"name"	    : "Weekend",
+			"dayOfWeek" : ["Sun", "Sat"],
+			"startTime" : "11:00am",
+			"endTime"   : "5:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  
+		    "discount"  : 25,
+		    "duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+			"tableFor5" : 1,
+			"tableFor6" : 1
+		}
+	]
+}

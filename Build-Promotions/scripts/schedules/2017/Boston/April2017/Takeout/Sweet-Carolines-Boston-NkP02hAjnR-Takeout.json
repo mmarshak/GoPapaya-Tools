@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "NkP02hAjnR",
+	"restaurantName"	: "Sweet Caroline’s"  ,
+	"promotionFamily"   : "Take Out",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "All-Day",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : " 3:00pm",
+			"endTime"	: "10:25pmm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 10,  			
+			"discount"	: 30,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

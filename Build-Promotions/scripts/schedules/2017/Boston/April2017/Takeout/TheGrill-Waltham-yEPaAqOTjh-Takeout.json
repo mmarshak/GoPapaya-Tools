@@ -1,0 +1,60 @@
+{
+	"restaurantID" 		: "yEPaAqOTjh",
+	"restaurantName"	: "The Grill",
+	"promotionFamily"   : "Take Out",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "4:00pm",
+			"endTime"   : "6:00pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         :  6,
+			"maxNumberOfOrders"    : 10,  			
+			"discount"  : 20,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+				{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Fri"],
+			"startTime" : "2:00pm",
+			"endTime"   : "5:00pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         :  6,
+			"maxNumberOfOrders"    : 10,  			
+			"discount"  : 20,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+				{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Sat","Sun"],
+			"startTime" : "1:00pm",
+			"endTime"   : "4:00pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         :  6,
+			"maxNumberOfOrders"    : 10,  			
+			"discount"  : 20,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		}
+			
+
+	]
+}

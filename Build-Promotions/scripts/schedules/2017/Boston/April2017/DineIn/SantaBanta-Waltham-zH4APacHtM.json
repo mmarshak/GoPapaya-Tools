@@ -1,25 +1,25 @@
 {
-	"restaurantID" 		: "EpUozF4gdL",
-	"restaurantName"	: "Cantina La Mexicana",
-	"promotionFamily"   : "Dine In",
+	"restaurantID" 		: "zH4APacHtM",
+	"restaurantName"	: "Santa Banta",
+	"promotionFamily"   : "Dine In",	
 	"startDate"			: "4/1/2017",
 	"endDate"			: "4/30/2017",
-	"skipDates"			: [ "1/1/2017"],
+	"skipDates"			: [ ],
 	"schedules"			: [
 		{
-			"name"	    : "LunchDinner",
+			"name"	    : "Dinner",
 			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-			"startTime" : "11:00am",
+			"startTime" : "6:00pm",
 			"endTime"   : "9:30pm",
 			"promotionTypes"       : ["Dine In"],
 			"maxPartySize"         : 0,
 			"maxNumberOfOrders"    : 0,  			
-		    "discount"  : 30,
-		    "duration"  : 1800,
+		    "discount"  : 20,
+		    "duration"  : 2700,
             "alcohol"   : 0,
-			"tableFor2" : 2,
-			"tableFor4" : 1,
-		    "tableFor5" : 1,
+			"tableFor2" : 3,
+			"tableFor4" : 3,
+			"tableFor5" : 1,
 			"tableFor6" : 1
 		}
 	]

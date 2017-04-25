@@ -1,7 +1,7 @@
 {
 	"restaurantID" 		: "w0yqN9wN2q",
 	"restaurantName"	: "Sol Azteca",
-	"promotionFamily"   : "Dine In",	
+	"promotionFamily"   : "Take Out",
 	"startDate"			: "4/1/2017",
 	"endDate"			: "4/30/2017",
 	"skipDates"			: [ ],
@@ -10,17 +10,17 @@
 			"name"	    : "Dinner",
 			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 			"startTime" : "5:00pm",
-			"endTime"   : "9:40pm",
-			"promotionTypes"       : ["Dine In"],
-			"maxPartySize"         : 0,
-			"maxNumberOfOrders"    : 0,  			
+			"endTime"   : "9:30pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         : 15,
+			"maxNumberOfOrders"    :  6,  			
 		    "discount"  : 30,
-		    "duration"  : 1800,
+		    "duration"  : 2700,
             "alcohol"   : 0,
-			"tableFor2" : 3,
-			"tableFor4" : 2,
-			"tableFor5" : 1,
-			"tableFor6" : 1
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
 		}
 	]
 }
