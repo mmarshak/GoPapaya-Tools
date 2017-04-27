@@ -1,17 +1,17 @@
 {
-	"restaurantID" 		: "OBmwbWDbIj",
-	"restaurantName"	: "Piperi",
+	"restaurantID" 		: "ToAT11yFrX",
+	"restaurantName"	: "High Spot Deli",
 	"promotionFamily"   : "Take Out",
-	"startDate"			: "04/01/2017",
-	"endDate"			: "04/30/2017",
+	"startDate"			: "04/27/2017",
+	"endDate"			: "04/28/2017",
 	"skipDates"			: [ ],
 	"schedules"			: [
 		{
 			"name"	    : "45minutes",
-			"dayOfWeek" : ["Mon","Wed","Fri"],
-			"startTime" : "3:00pm",
-			"endTime"   : "6:15pm",
-			"promotionTypes"       : ["Take Out - Walk"],
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "2:00pm",
+			"endTime"   : "3:15pm",
+			"promotionTypes"       : ["Take Out - Walk","Take Out - Phone"],
 			"maxPartySize"         : 6,
 			"maxNumberOfOrders"    : 50,       
 		    "discount"  : 20,
@@ -24,10 +24,10 @@
 		},
 		{
 			"name"	    : "30minutes",
-			"dayOfWeek" : ["Mon","Wed","Fri"],
-			"startTime" : "6:16pm",
-			"endTime"   : "6:30pm",
-			"promotionTypes"       : ["Take Out - Walk"],
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "3:16pm",
+			"endTime"   : "3:30pm",
+			"promotionTypes"       : ["Take Out - Walk","Take Out - Phone"],
 			"maxPartySize"         : 6,
 			"maxNumberOfOrders"    : 50,       
 		    "discount"  : 20,
@@ -40,10 +40,10 @@
 		},
 		{
 			"name"	    : "15minutes",
-			"dayOfWeek" : ["Mon","Wed","Fri"],
-			"startTime" : "6:31pm",
-			"endTime"   : "6:45pm",
-			"promotionTypes"       : ["Take Out - Walk"],
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+			"startTime" : "3:31pm",
+			"endTime"   : "3:45pm",
+			"promotionTypes"       : ["Take Out - Walk","Take Out - Phone"],
 			"maxPartySize"         : 6,
 			"maxNumberOfOrders"    : 50,       
 		    "discount"  : 20,
@@ -56,6 +56,3 @@
 		}
 	]
 }
-
-
-

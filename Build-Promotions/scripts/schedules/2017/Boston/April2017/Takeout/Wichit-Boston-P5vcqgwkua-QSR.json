@@ -1,0 +1,58 @@
+{
+	"restaurantID" 		: "P5vcqgwkua",
+	"restaurantName"	: "Wichit"  ,
+	"promotionFamily"   : "Take Out",	
+	"startDate"			: "4/1/2017",
+	"endDate"			: "4/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "All-Day",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : " 3:00pm",
+			"endTime"	: " 8:14pmm",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 10,  			
+			"discount"	: 20,
+			"duration"  : 2700,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "All-Day",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : " 8:15pm",
+			"endTime"	: " 8:30pmm",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 10,  			
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"		: "All-Day",
+			"dayOfWeek" : ["Sun"],
+			"startTime" : " 3:00pm",
+			"endTime"	: " 7:15pmm",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 10,  			
+			"discount"	: 20,
+			"duration"  : 2700,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

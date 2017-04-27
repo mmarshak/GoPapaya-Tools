@@ -9,7 +9,7 @@
 		{
 			"name"		: "Mid weel",
 			"dayOfWeek" : ["Tue", "Wed", "Thu","Fri","Sat"],
-			"startTime" : " 1:00am",
+			"startTime" : " 1:00pm",
 			"endTime"	: " 5:00pmm",
 			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
 			"maxPartySize"         :  6,
