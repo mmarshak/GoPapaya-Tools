@@ -1,0 +1,11 @@
+
+
+The flags are -
+* PRODUCTION_DB 0 or 1 , indicate is we run against the test DB or prodution DB
+* ACTIVE_RUN    0 or 1 , indicate if this a passive run or an active run that will change the restaurant object
+* RATING_UPDATE 0 or 1 , should we update the restaurant yelp rating. If it is 0, and the restaurant have allready a yelp business ID then we skip updating the restaurant object.
+                         If it is 1 , we will update the yelp Rating as well the yelp business id.
+
+Example of a run -                         
+
+PRODUCTION_DB=0  ACTIVE_RUN=1 RATING_UPDATE=1 node add_yelp_id_to_resatuarnts.js

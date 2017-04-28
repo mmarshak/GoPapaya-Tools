@@ -1,0 +1,8 @@
+Run from the drectory while the js file exist
+
+// Add gray scale as dine in main photo
+DEBUG=* PRODUCTION_DB=0 PHOTO_TYPE=DINEIN  node add_grayscale_images.js
+
+// Add gray scale as dine in main photo
+
+DEBUG=* PRODUCTION_DB=0 PHOTO_TYPE=TAKEOUT  node add_grayscale_images.js
