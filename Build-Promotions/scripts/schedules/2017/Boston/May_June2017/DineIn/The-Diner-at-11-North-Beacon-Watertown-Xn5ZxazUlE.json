@@ -1,0 +1,27 @@
+{
+	"restaurantID" 		: "Xn5ZxazUlE",
+	"restaurantName"	: "The Diner At 11 North Beacon",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [ 
+		{
+			"name"	    : "mid week morning",
+			"dayOfWeek" : ["Mon","Tue","Wed", "Thu"],
+			"startTime" : "9:00am",
+			"endTime"   : "11:00am",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"  : 20,
+            "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 1,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		}	
+	]
+}
+

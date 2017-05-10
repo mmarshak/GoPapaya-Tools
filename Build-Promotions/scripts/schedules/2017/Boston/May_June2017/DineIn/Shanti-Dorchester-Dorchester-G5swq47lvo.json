@@ -1,0 +1,42 @@
+{
+	"restaurantID" 		: "G5swq47lvo",
+	"restaurantName"	: "Shanti Dorchester"  ,
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Sun-Thu dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu"],
+			"startTime" : " 5:00pm",
+			"endTime"	: "10:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 3,
+			"tableFor4" : 3,
+			"tableFor5" : 1,
+			"tableFor6" : 1
+		},
+		{
+			"name"		: "Fri-Sat dinner",
+			"dayOfWeek" : ["Fri", "Sat"],
+			"startTime" : " 5:00pm",
+			"endTime"	: "10:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 2,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 1
+		}
+	]
+}

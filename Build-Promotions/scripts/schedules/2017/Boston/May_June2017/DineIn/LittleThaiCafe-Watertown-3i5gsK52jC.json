@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "3i5gsK52jC",
+	"restaurantName"	: "Little Thai Cafe",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "4:00pm",
+			"endTime"   : "9:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+			"tableFor5" : 1,
+			"tableFor6" : 0
+		}
+	]
+}

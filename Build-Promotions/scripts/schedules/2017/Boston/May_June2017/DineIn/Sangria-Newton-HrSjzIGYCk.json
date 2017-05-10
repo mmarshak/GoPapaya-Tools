@@ -1,0 +1,59 @@
+{
+	"restaurantID" 		: "HrSjzIGYCk",
+	"restaurantName"	: "Sangria",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [ 
+		{
+			"name"	    : "Tues",
+			"dayOfWeek" : ["Tue"],
+			"startTime" : "5:00pm",
+			"endTime"   : "8:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"  : 15,
+            "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		},
+		{
+			"name"	    : "Wed-Thu",
+			"dayOfWeek" : ["Wed", "Thu"],
+			"startTime" : "11:3apm",
+			"endTime"   : "8:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"  : 15,
+            "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		},
+		{
+			"name"	    : "Friday, Sataurday",
+			"dayOfWeek" : ["Fri","Sat"],
+			"startTime" : "11:30am",
+			"endTime"   : "3:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 2,
+			"tableFor4" : 2,
+			"tableFor5" : 1,
+			"tableFor6" : 1
+		}
+	]
+}
+

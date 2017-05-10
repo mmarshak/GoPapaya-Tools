@@ -1,0 +1,43 @@
+{
+	"restaurantID" 		: "PUHB7aSDYN",
+	"restaurantName"	: "Brewer's Coalition",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [ 
+		{
+			"name"	    : "Mid week lunch",
+			"dayOfWeek" : ["Mon","Tue","Wed", "Thu"],
+			"startTime" : "11:30am",
+			"endTime"   : "5:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"  : 15,
+            "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 3,
+			"tableFor4" : 2,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		},
+		{
+			"name"	    : "Mid week evening",
+			"dayOfWeek" : ["Mon","Tue","Wed", "Thu"],
+			"startTime" : "8:30pm",
+			"endTime"   : "9:30pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"  : 15,
+            "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 3,
+			"tableFor4" : 2,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		}		
+	]
+}
+

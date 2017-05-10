@@ -1,0 +1,61 @@
+{
+	"restaurantID" 		: "OBmwbWDbIj",
+	"restaurantName"	: "Piperi",
+	"promotionFamily"   : "Take Out",
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "45minutes",
+			"dayOfWeek" : ["Mon","Wed","Fri"],
+			"startTime" : "3:00pm",
+			"endTime"   : "6:15pm",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 50,       
+		    "discount"  : 20,
+		    "duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "30minutes",
+			"dayOfWeek" : ["Mon","Wed","Fri"],
+			"startTime" : "6:16pm",
+			"endTime"   : "6:30pm",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 50,       
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "15minutes",
+			"dayOfWeek" : ["Mon","Wed","Fri"],
+			"startTime" : "6:31pm",
+			"endTime"   : "6:45pm",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 50,       
+		    "discount"  : 20,
+		    "duration"  : 900,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}
+
+
+

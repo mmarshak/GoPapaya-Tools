@@ -1,0 +1,42 @@
+{
+	"restaurantID" 		: "5feRnMq0s7",
+	"restaurantName"	: "La Voile Brookline",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: ["1/1/2017"],
+	"schedules"			: [
+		{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "12:00pm",
+			"endTime"   : "2:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+		    "discount"  : 15,
+		    "duration"  : 1800,    
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "5:00pm",
+			"endTime"   : "8:30pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

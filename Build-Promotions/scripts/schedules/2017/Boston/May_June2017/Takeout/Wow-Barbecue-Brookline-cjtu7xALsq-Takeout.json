@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "cjtu7xALsq",
+	"restaurantName"	: "Wu Er by WOW Barbecue",
+	"promotionFamily"   : "Take Out",
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [],
+	"schedules"			: [
+		{
+			"name"	    : "Mon-Thr",
+			"dayOfWeek" : ["Mon", "Tue", "Wed","Thu"],
+			"startTime" : "12:00pm",
+			"endTime"   : "11:00pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         :  6,
+			"maxNumberOfOrders"    : 15,  			
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

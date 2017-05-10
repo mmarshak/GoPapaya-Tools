@@ -1,20 +1,20 @@
 {
   "ecmaVersion": 6,
   "libs": [
-    "browser",
-    "jquery"
+    "browser"
   ],
   "loadEagerly": [
-    "./*.js",
-    "Parse-SDK-JS-master/src/Parse.js",
-    "/Users/mmarshak/training/js_parse_test_dec_2016/*.js"
-
+    "./*.js"
+  ],
+  "dontLoad": [
+    "node_modules/**"
   ],
   "plugins": {
     "complete_strings": {
       "maxLength": 15
     },
     "node": {},
+    "es_modules": {},
     "doc_comment": {
       "fullDocs": true,
       "strong": true

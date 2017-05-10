@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "UzXlr9SI9M",
+	"restaurantName"	: "Thai Basil",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [
+		{
+			"name"	    : "Sun-Thur",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "3:00pm",
+			"endTime"   : "9:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+		    "discount"  : 15,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 4,
+			"tableFor4" : 3,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		}
+	]
+}

@@ -1,0 +1,58 @@
+{
+	"restaurantID" 		: "RmcXErO5D7",
+	"restaurantName"	: "Cafe Med",
+	"promotionFamily"   : "Take Out",
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "45minutes",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "3:00pm",
+			"endTime"   : "5:15pm",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 10,       
+		    "discount"  : 20,
+		    "duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "30minutes",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "5:16pm",
+			"endTime"   : "5:30pm",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 10,       
+		    "discount"  : 20,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "15minutes",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "5:31pm",
+			"endTime"   : "5:45pm",
+			"promotionTypes"       : ["Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 10,       
+		    "discount"  : 20,
+		    "duration"  : 900,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

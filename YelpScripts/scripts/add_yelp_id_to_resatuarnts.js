@@ -156,14 +156,14 @@ function setParseConnection() {
 		// Live Parse Server credentails
 		Parse.initialize(APP_KEY, JAVA_SCRIPT_KEY, MASTER_KEY);
 		//Parse.serverURL = 'https://www.mmparse.com/pserver';
-		Parse.serverURL = "http://10.10.10.80:1337/pserver";
+		Parse.serverURL = "http://10.10.10.89:1337/pserver";
 		//Parse.serverURL = 'http://127.0.0.1:1337/pserver';
 	}
 	else {
 		// Test Parse Server credentails
 		Parse.initialize(TEST_APP_KEY, TEST_JAVA_SCRIPT_KEY, TEST_MASTER_KEY);
 		//Parse.serverURL = 'https://www.mmparse.com/pserver';
-		Parse.serverURL = "http://10.10.10.80:1337/pserver";
+		Parse.serverURL = "http://10.10.10.89:1337/pserver";
 		//Parse.serverURL = 'https://cf6b06b5.ngrok.io/pserver';
 	}
 

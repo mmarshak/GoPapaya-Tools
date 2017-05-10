@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "p1BuNj82br",
+	"restaurantName"	: "Shawarma Falafel",
+	"promotionFamily"   : "Take Out",
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ "1/1/2017"],
+	"schedules"			: [
+		{
+			"name"	    : "LunchDinner",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri","Sat"],
+			"startTime" : "2:00pm",
+			"endTime"   : "5:00pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         :  6,
+			"maxNumberOfOrders"    : 40,  			
+		    "discount"  : 20,
+		    "duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"restaurantID" 		: "IQ3NCoIcEE",
+	"restaurantName"	: "Shun's Kitchen"  ,
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Mon-Sat All Day",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "11:30am",
+			"endTime"	: " 9:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 3,
+			"tableFor5" : 1,
+			"tableFor6" : 1
+		},
+		{
+			"name"		: "Sun All Day",
+			"dayOfWeek" : ["Sun"],
+			"startTime" : "12:00pm",
+			"endTime"	: " 8:00pmm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"	: 20,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 3,
+			"tableFor5" : 1,
+			"tableFor6" : 1
+		}
+	]
+}

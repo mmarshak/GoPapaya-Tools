@@ -1,0 +1,869 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"v",
+				"validationResult\t{} "
+			],
+			[
+				"de",
+				"debugger\t? "
+			],
+			[
+				"prom",
+				"promotionFamily\tnum "
+			],
+			[
+				"u",
+				"undefined"
+			],
+			[
+				"getprom",
+				"getPromotionFamilyFromPromotionType(promotionType) -> number\tfn "
+			],
+			[
+				"day",
+				"dayPromotionObject\t{} "
+			],
+			[
+				"pr",
+				"promotionType\tnum "
+			],
+			[
+				"rew",
+				"rewardObject"
+			],
+			[
+				"res",
+				"resolve"
+			],
+			[
+				"KParse",
+				"KParseActivityUserKey"
+			],
+			[
+				"ins",
+				"inspect"
+			],
+			[
+				"installation",
+				"installationObject"
+			],
+			[
+				"pro",
+				"profilesManagementt"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"st",
+				"stack"
+			],
+			[
+				"sta",
+				"state"
+			],
+			[
+				"ref",
+				"referalCode"
+			],
+			[
+				"new",
+				"newReferalCodeGenerated"
+			],
+			[
+				"sk",
+				"skipUserTest"
+			],
+			[
+				"KParseRew",
+				"KParseRewardsEmailKey"
+			],
+			[
+				"KParseUser",
+				"KParseUserReferalCodeeKey"
+			],
+			[
+				"KParseRewar",
+				"KParseRewardsUserKey"
+			],
+			[
+				"err",
+				"errorString"
+			],
+			[
+				"user",
+				"userObject"
+			],
+			[
+				"ema",
+				"email"
+			],
+			[
+				"cle",
+				"cleanedEmail"
+			],
+			[
+				"s",
+				"stack"
+			],
+			[
+				"e",
+				"err"
+			],
+			[
+				"stat",
+				"stateString"
+			],
+			[
+				"at",
+				"attributes"
+			],
+			[
+				"reward",
+				"rewardQuery"
+			],
+			[
+				"r",
+				"reward"
+			],
+			[
+				"log",
+				"logging"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"us",
+				"users"
+			],
+			[
+				"Succes",
+				"success"
+			],
+			[
+				"users",
+				"usersArray"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"allow",
+				"allowed"
+			],
+			[
+				"extr",
+				"extraErrorMessage"
+			],
+			[
+				"loc",
+				"locationUpdateDate"
+			],
+			[
+				"get",
+				"getTime"
+			],
+			[
+				"vendor",
+				"deviceVendorUUID"
+			],
+			[
+				"now",
+				"nowDate"
+			],
+			[
+				"las",
+				"lastTimeTheAppWasOpened"
+			],
+			[
+				"dis",
+				"distanceToBostonCIC"
+			],
+			[
+				"is",
+				"isRestaurantOwner"
+			],
+			[
+				"User",
+				"userManagement"
+			],
+			[
+				"ac",
+				"activityType"
+			],
+			[
+				"Invite",
+				"inviteCode"
+			],
+			[
+				"use",
+				"userInfo"
+			],
+			[
+				"a",
+				"agrs"
+			],
+			[
+				"th",
+				"then"
+			],
+			[
+				"sucessfuly",
+				"sucessfully"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"cl",
+				"cleanedEmail"
+			],
+			[
+				"usero",
+				"userObjectID"
+			],
+			[
+				"isr",
+				"isRewardProgramActive"
+			],
+			[
+				"conf",
+				"configuration"
+			],
+			[
+				"feedback",
+				"feedbackSurvey"
+			],
+			[
+				"in",
+				"inviteCode"
+			],
+			[
+				"isi",
+				"isInviteCodeValid"
+			],
+			[
+				"Invi",
+				"inviteCode"
+			],
+			[
+				"sur",
+				"surveyInfo"
+			],
+			[
+				"inv",
+				"inviteCodeLegit"
+			],
+			[
+				"other",
+				"otherRewardObject"
+			],
+			[
+				"invite",
+				"inviteCode"
+			],
+			[
+				"last",
+				"lastName"
+			],
+			[
+				"KParseRes",
+				"KParseRestaurantNameKey"
+			],
+			[
+				"restaura",
+				"restaurantObject"
+			],
+			[
+				"rewa",
+				"rewardsManagement"
+			],
+			[
+				"rep",
+				"reportError"
+			],
+			[
+				"ca",
+				"catch"
+			],
+			[
+				"KParsere",
+				"KParseRewardsUserKey"
+			],
+			[
+				"exter",
+				"externalUser"
+			],
+			[
+				"KParseRewa",
+				"KParseRewardsUserKey"
+			],
+			[
+				"app",
+				"AppConstants"
+			],
+			[
+				"payment",
+				"paymentMethod"
+			],
+			[
+				"pay",
+				"paymentMethod"
+			],
+			[
+				"feed",
+				"Feedback"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"App",
+				"AppConstants"
+			],
+			[
+				"i",
+				"id"
+			],
+			[
+				"Pro",
+				"Promise(executor)\tfn "
+			],
+			[
+				"nu",
+				"null"
+			],
+			[
+				"pa",
+				"paymentMethod\t? "
+			],
+			[
+				"fir",
+				"firstName"
+			],
+			[
+				"rewards",
+				"rewardsPointsLog\t? "
+			],
+			[
+				"p",
+				"pointsBalance"
+			],
+			[
+				"ex",
+				"exports"
+			],
+			[
+				"poi",
+				"pointedRedeemed\t? "
+			],
+			[
+				"points",
+				"pointsBalance"
+			],
+			[
+				"fi",
+				"firstName\t? "
+			],
+			[
+				"n",
+				"null"
+			],
+			[
+				"Ap",
+				"AppConstants"
+			],
+			[
+				"eve",
+				"eventTime"
+			],
+			[
+				"er",
+				"err"
+			],
+			[
+				"cus",
+				"customData"
+			],
+			[
+				"l",
+				"logError"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"ma",
+				"mailGunResult\t{} "
+			],
+			[
+				"parse",
+				"parse-server"
+			],
+			[
+				"da",
+				"databaseUri\tstr "
+			],
+			[
+				"des",
+				"destroyAll(key) -> Promise\tfn "
+			],
+			[
+				"file",
+				"fileData\t? "
+			],
+			[
+				"Pr",
+				"Promise(executor)\tfn "
+			],
+			[
+				"current",
+				"currentUser"
+			],
+			[
+				"curr",
+				"currentUser"
+			],
+			[
+				"O",
+				"Object(className, attributes, options)\tfn "
+			],
+			[
+				"obj",
+				"object\t? "
+			],
+			[
+				"ob",
+				"object"
+			],
+			[
+				"cre",
+				"createWithoutData"
+			],
+			[
+				"por",
+				"promotionObject\t? "
+			],
+			[
+				"Re",
+				"Restaurant\t? "
+			],
+			[
+				"object",
+				"objectId"
+			],
+			[
+				"lo",
+				"log\t{} "
+			],
+			[
+				"f",
+				"failure\t{} "
+			],
+			[
+				"time",
+				"timeAllowed\tnum "
+			],
+			[
+				"set",
+				"setTimeout(f) -> number\tfn "
+			],
+			[
+				"ne",
+				"next\t? "
+			],
+			[
+				"htt",
+				"httpres\t{} "
+			],
+			[
+				"c",
+				"chunk\t? "
+			],
+			[
+				"hr",
+				"httpres\t{} "
+			],
+			[
+				"key",
+				"keys\t[] "
+			],
+			[
+				"exp",
+				"exports\t{} "
+			],
+			[
+				"P",
+				"Pulser()\tfn "
+			],
+			[
+				"ar",
+				"argv\t[] "
+			],
+			[
+				"create",
+				"createWriteStream(path, options?) -> stream.Writable\tfn "
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/JSHint/JSHint.sublime-build",
+					""
+				],
+				[
+					"Packages/User/node.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/node.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"Snippet: ",
+				"Snippet: setTimeout function"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mmarshak/Projects/GoPapaya-Tools/Build-Promotions/scripts/build_promotions.sublime-project",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/cloud/profiles-management.js",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/start_test_app_parse_server_127.0.0.1",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/cloud/reservation-management.js",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/node_modules/kue-ui/node_modules/jade/node_modules/transformers/node_modules/uglify-js/lib/output.js",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/cloud/shared-configuration.js",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/cloud/email-utils.js",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/cloud/webhooks/mailgun_webhook.js",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/cloud/webhooks/survey_webhook.js",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/cloud/webhooks/run_feedback_survey",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/cloud/webhooks/examples_for_curl_POST",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/cloud/queue-management.js",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/index.js",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/node_modules/cron-parser/lib/date.js",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/cloud/rewards-management.js",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/package.json",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/PROJECT_NAME.sublime-project",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/parse_server.sublime-project",
+		"/Users/mmarshak/Projects/GoPapaya-Parse-Server/start_parse_server_locally",
+		"/Users/mmarshak/training/nodejs_web_development/chap11/test-deleteFile.js",
+		"/Users/mmarshak/training/nodejs_web_development/book_original_source_code/Node.js Web Development_code/Chapter 4/fibonacci/app.js",
+		"/Users/mmarshak/training/nodejs_web_development/book_original_source_code/Node.js Web Development_code/Chapter 4/fibonacci/views/error.ejs.html",
+		"/Users/mmarshak/training/nodejs_web_development/.jshintrc",
+		"/Users/mmarshak/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/mmarshak/Library/Application Support/Sublime Text 3/Packages/User/Tern.sublime-settings",
+		"/Users/mmarshak/training/nodejs_web_development/.tern-project",
+		"/Users/mmarshak/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/mmarshak/training/java_script_tests/test.js",
+		"/Users/mmarshak/training/java_script_tests/garble.js",
+		"/Users/mmarshak/training/java_script_tests/garble2.js",
+		"/Users/mmarshak/Library/Application Support/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
+		"/Users/mmarshak/training/java_script_tests/test2.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/mmarshak/Projects/GoPapaya-Parse-Server,/Users/mmarshak/Projects/GoPapaya-Parse-Server/cloud"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"promotionTypeBisMask",
+			"getPromotionFamilyName",
+			"getPromotionTypeNameArray",
+			"validatePromotionSchedule",
+			"PromotionScheduleObject",
+			"PromotionScheduleDayObject",
+			"PromotionScheduleObject",
+			"validatePromotionSchedule",
+			"json_file_reader",
+			"PromotionScheduleDayObject",
+			"PromotionScheduleObject",
+			"PromotionScheduleDayObject",
+			"sendHTMLEmail",
+			"sendRewardEmail",
+			"rewardsUseCase_1_Name",
+			"sendHTMLEmail",
+			"rewardsUseCase_1_Name",
+			"Schedule a background job to ru",
+			"WELLCOME_EMAIL_AFTER_SIGNUP_JOB_DELAY",
+			"scheduleJobForSingleRunAfterDelay",
+			"addRewardEntryAndChangeUser",
+			"doubleInitialPoints",
+			"buildNewRewardObject",
+			"initalProgarmLaunchEmail",
+			"addRewardObjectToUsers",
+			"CHECK_LOCATION_AFTER_AP_OPEN_DELAY",
+			"todo",
+			"CHECK_IN_EMAIL_DELAY",
+			"CHECK_LOCATION_AFTER_AP_OPEN_DELAY",
+			"WELLCOME_EMAIL_AFTER_SIGNUP_JOB_DELAY",
+			"CHECK_LOCATION_AFTER_AP_OPEN_DELAY",
+			"todo",
+			"scheduleJobToCheckLocationForAppOpen",
+			"appop",
+			"CHECK_LOCATION_AFTER_AP_OPEN_DELAY",
+			"MAX_LOCATION_AGE_ALLOWED",
+			"scheduleJobToCheckLocationForAppOpen",
+			"300",
+			"CHECK_LOCATION_AFTER_AP_OPEN_DELAY",
+			"60",
+			"addRewardEntryAndChangeUser",
+			"exports.scheduleJobToCheckLocationForAppOpe",
+			"fakeSkip",
+			"scheduleJobToCheckLocationForAppOpen",
+			"addOpneAppPoints",
+			"ing is too old, ignore %s",
+			"Math.floo",
+			"isNewBalanceCrossRedemptionsLevel",
+			"oldBalance",
+			"isNewBalanceCrossRedemptionsLevel",
+			"isPointsBalanceHitRedemptionsLevel",
+			"REDEMPTION_TRIGGER",
+			"isPointsBalanceHitRedemptionsLevel",
+			"KParseRewardsFirstCheckInWithValidReferalCodeKey",
+			"paymentMethod processing use case",
+			"GPSCheckInManagement",
+			"in Amazon gift card",
+			"reservationObjectID",
+			"token",
+			"attemptGPSCheckIn",
+			"requestInstallationId",
+			"heartbeat",
+			"requestInstallationId",
+			"distanceToRestaurant",
+			"maxAgeAllowedForLocation",
+			"objects",
+			"user",
+			"new Parse.Query(Promotion",
+			"profilesManagement",
+			"buildNewRewardObject",
+			".buildNewRewardObject",
+			"buildNewRewardObject",
+			"referalCodeAutoGenerated",
+			"addRewardEntryAndChangeUser",
+			"buildnew",
+			"build",
+			"resolve",
+			"createdReferal",
+			"KParseRewardsNumOfCheckInsKey",
+			"KParseRewardsFirstCheckInWithValidReferalCodeKey",
+			"addRewardEntryAndChangeUser",
+			"EXISTING_REWARD_OBJECT_FOUND",
+			"fter save for user, user does not have a reward object created for him",
+			"fter save for user, user does not have a reward object created for him ZH",
+			"Promise.all(",
+			"updatedUser",
+			"updatedUser.get",
+			".isRewardValid",
+			"(!rewa",
+			"buildNewRewardObject",
+			"user.id",
+			".curentPointsBalance",
+			"buildNewRewardObject invalid reward",
+			"buildNewRewardObject",
+			"exter",
+			".validr",
+			".isRewardValid",
+			"cleanedEmail",
+			"cleanem",
+			"addre",
+			"welcome",
+			"addRewardEntryAndChangeUser",
+			"next",
+			"_.clone(user",
+			"_.clone",
+			"next",
+			"addRewardObjectToUsers",
+			"endWelcomeEMail reward object id ",
+			"initialLaunchOfProgarm",
+			"skipUsersWithRewardObject",
+			"addRewardObjectToUsers",
+			"delay",
+			"userObjectFromRewardObject",
+			"welcome",
+			"objectid",
+			"welcome",
+			"inviteCodeLowerCase",
+			"rewardqu",
+			"OLDredeemGuestRewards",
+			"sendWelcomeEMail",
+			"Queue",
+			"trim",
+			"Promise.",
+			"ddRewardEntry save a new reward id",
+			" user allready have a reward object created for him email",
+			"addRewardEntry save a new",
+			"addRewardEntryAndChangeUser",
+			"addRewardEntry save a new reward id"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 340.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "test_parse.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

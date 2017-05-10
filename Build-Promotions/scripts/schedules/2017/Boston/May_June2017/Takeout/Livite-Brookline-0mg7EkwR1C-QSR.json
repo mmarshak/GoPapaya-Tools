@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "0mg7EkwR1C",
+	"restaurantName"	: "Livite"  ,
+	"promotionFamily"   : "Take Out",
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Mid week",
+			"dayOfWeek" : ["Tue", "Wed", "Thu","Fri"],
+			"startTime" : " 4:00pm",
+			"endTime"	: " 5:00pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         :  6,
+			"maxNumberOfOrders"    : 15,  			
+			"discount"	: 20,
+			"duration"  : 2700,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

@@ -1,0 +1,58 @@
+{
+	"restaurantID" 		: "6cFsLAYtB4",
+	"restaurantName"	: "Massimino's",
+	"promotionFamily"   : "Take Out",
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "11:00am",
+			"endTime"   : "5:00pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 10,  
+			"discount"  : 20,
+			"duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+		    "tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Dinner1",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
+			"startTime" : "9:00pm",
+			"endTime"   : "9:25pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 10,  			
+		    "discount"  : 20,
+		    "duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		},
+		{
+			"name"	    : "Dinner2",
+			"dayOfWeek" : ["Sat"],
+			"startTime" : "9:00pm",
+			"endTime"   : "10:25pm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         : 6,
+			"maxNumberOfOrders"    : 10,  			
+		    "discount"  : 20,
+		    "duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

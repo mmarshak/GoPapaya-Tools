@@ -1,0 +1,12 @@
+
+
+The flags are -
+* PRODUCTION_DB 0 or 1 , indicate is we run against the test DB or prodution DB
+ 
+parameters are -
+* restaurantObject ID startTime (form MM/DD/YYYY)  endTime (form MM/DD/YYYY - end date is optional) 
+
+
+Example of a run -                         
+
+PRODUCTION_DB=1 node remove_promotion_for_restaurant.js  eiWdSYfGB1  5/9/2017

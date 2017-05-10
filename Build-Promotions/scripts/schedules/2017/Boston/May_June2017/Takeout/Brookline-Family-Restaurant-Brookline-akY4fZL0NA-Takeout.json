@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "akY4fZL0NA",
+	"restaurantName"	: "Brookline Family Restaurant"  ,
+	"promotionFamily"   : "Take Out",
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "Mon-Thu All-Day",
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu"],
+			"startTime" : "10:00am",
+			"endTime"	: "10:00pmm",
+			"promotionTypes"       : ["Take Out - Phone","Take Out - Walk"],
+			"maxPartySize"         :  6,
+			"maxNumberOfOrders"    : 20,  			
+			"discount"	: 20,
+			"duration"  : 2700,
+			"alcohol"	: 0,
+			"tableFor2" : 0,
+			"tableFor4" : 0,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

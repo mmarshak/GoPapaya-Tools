@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "3DFGAoVJ88",
+	"restaurantName"	: "Holly Crab",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "6/2/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "4:00pm",
+			"endTime"   : "7:00pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+		    "discount"  : 10,
+		    "duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 1,
+			"tableFor5" : 0,
+			"tableFor6" : 0
+		}
+	]
+}

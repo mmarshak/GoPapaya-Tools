@@ -1,0 +1,22 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	   "ternjs": {
+        "include": ["*.js"],
+        "loadEagerly": [
+            "Parse-SDK-JS-master/src/Parse.js",
+            "./*.js"
+        ],
+            "plugins": {
+            	"node": {}
+            }
+        }
+}
+
+
+//Parse-SDK-JS-master
+// Reference - https://www.parse.com/questions/cloud-code-need-tool-javascript-editor

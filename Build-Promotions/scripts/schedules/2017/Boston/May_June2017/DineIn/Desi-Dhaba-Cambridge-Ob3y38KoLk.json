@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "Ob3y38KoLk",
+	"restaurantName"	: "Desi Dhaba"  ,
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"		: "All-Day",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : " 5:00pm",
+			"endTime"	: " 9:30pmm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"	: 25,
+			"duration"  : 1800,
+			"alcohol"	: 0,
+			"tableFor2" : 3,
+			"tableFor4" : 2,
+			"tableFor5" : 1,
+			"tableFor6" : 1
+		}
+	]
+}

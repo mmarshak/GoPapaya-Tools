@@ -1,0 +1,26 @@
+{
+	"restaurantID" 		: "47KOu48cUU",
+	"restaurantName"	: "Shanghai Village",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "LunchDinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "12:30pm",
+			"endTime"   : "8:30pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+			"discount"  : 20,
+			"duration"  : 1800,
+            "alcohol"   : 0,
+			"tableFor2" : 0,
+			"tableFor4" : 2,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		}
+	]
+}

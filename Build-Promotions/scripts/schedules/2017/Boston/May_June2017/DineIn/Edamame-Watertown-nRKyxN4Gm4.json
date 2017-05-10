@@ -1,0 +1,42 @@
+{
+	"restaurantID" 		: "nRKyxN4Gm4",
+	"restaurantName"	: "Edamame",
+	"promotionFamily"   : "Dine In",	
+	"startDate"			: "5/1/2017",
+	"endDate"			: "6/30/2017",
+	"skipDates"			: [ ],
+	"schedules"			: [
+		{
+			"name"	    : "Lunch",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "11:40am",
+			"endTime"   : "2:40pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  
+			"discount"  : 15,
+			"duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+		    "tableFor5" : 1,
+			"tableFor6" : 1
+		},
+		{
+			"name"	    : "Dinner",
+			"dayOfWeek" : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+			"startTime" : "4:15pm",
+			"endTime"   : "8:45pm",
+			"promotionTypes"       : ["Dine In"],
+			"maxPartySize"         : 0,
+			"maxNumberOfOrders"    : 0,  			
+		    "discount"  : 20,
+		    "duration"  : 2700,
+            "alcohol"   : 0,
+			"tableFor2" : 1,
+			"tableFor4" : 1,
+			"tableFor5" : 1,
+			"tableFor6" : 1
+		}
+	]
+}
