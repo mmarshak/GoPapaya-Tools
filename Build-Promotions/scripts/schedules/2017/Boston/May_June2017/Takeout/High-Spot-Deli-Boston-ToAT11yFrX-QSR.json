@@ -2,7 +2,7 @@
 	"restaurantID" 		: "ToAT11yFrX",
 	"restaurantName"	: "High Spot Deli",
 	"promotionFamily"   : "Take Out",
-	"startDate"			: "5/1/2017",
+	"startDate"			: "5/10/2017",
 	"endDate"			: "6/30/2017",
 	"skipDates"			: [ ],
 	"schedules"			: [
@@ -40,7 +40,7 @@
 		},
 		{
 			"name"	    : "15minutes",
-			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+			"dayOfWeek" : ["Mon", "Tue", "Wed", "Thu", "Fri"],
 			"startTime" : "3:31pm",
 			"endTime"   : "3:45pm",
 			"promotionTypes"       : ["Take Out - Walk","Take Out - Phone"],

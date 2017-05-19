@@ -149,6 +149,7 @@ if (endSearchDateMoment) {
 
 promotionQuery.addAscending(AppConstants.KParsePromotionStartTimeKey);
 
+promotionQuery.limit(1000);
 
 var promotionQueryPromise = promotionQuery.find({useMasterKey : true});
 

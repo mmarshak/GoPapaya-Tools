@@ -2,7 +2,7 @@
 	"restaurantID" 		: "HrSjzIGYCk",
 	"restaurantName"	: "Sangria",
 	"promotionFamily"   : "Dine In",	
-	"startDate"			: "5/1/2017",
+	"startDate"			: "5/9/2017",
 	"endDate"			: "6/30/2017",
 	"skipDates"			: [ "1/1/2017"],
 	"schedules"			: [ 
@@ -25,7 +25,7 @@
 		{
 			"name"	    : "Wed-Thu",
 			"dayOfWeek" : ["Wed", "Thu"],
-			"startTime" : "11:3apm",
+			"startTime" : "11:3am",
 			"endTime"   : "8:00pm",
 			"promotionTypes"       : ["Dine In"],
 			"maxPartySize"         : 0,
