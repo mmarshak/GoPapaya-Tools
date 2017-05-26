@@ -295,7 +295,7 @@ function setParseConnection() {
 		// Live Parse Server credentails
 		Parse.initialize(APP_KEY, JAVA_SCRIPT_KEY, MASTER_KEY);
 		//Parse.serverURL = 'https://www.mmparse.com/pserver';
-		Parse.serverURL = "http://10.10.10.89:1337/pserver";
+		Parse.serverURL = "http://10.10.10.82:1337/pserver";
 		//Parse.serverURL = 'http://127.0.0.1:1337/pserver';
 	}
 	else {
